@@ -1,0 +1,16 @@
+{
+  "name": "z-labs/example-project",
+  "type": "project",
+  "require": {
+    "php": ">=7.0",
+    "mustache/mustache": "^2.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZLabs\\": "public_html/local/php_interface/classes/"
+    }
+  },
+  "extra": {
+    "bitrix-dir": "public_html/local"
+  }
+}

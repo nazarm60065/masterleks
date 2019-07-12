@@ -1,0 +1,59 @@
+@import '../mixins/mixins'
+@import '../variables/variables'
+@import '../functions/functions'
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+.page
+  margin: 0
+  padding: 0
+  color: $main-color
+  background-color: #fff
+  font-size: 16px
+  font-family: $default-font
+  font-weight: normal
+  font-style: normal
+  line-height: 1.25
+
+.clearfix
+  +clearfix()
+
+
+/* Классы для сокрытия/показа контента для определенных разрешений */
+.mobile
+  &-hide
+    display: none
+  &-show
+    display: inline
+
+.tablet-only
+  display: none
+
++mq(tablet)
+  .tablet
+    &-hide
+      display: none
+    &-show
+      display: inline
+    &-only
+      display: block
+
+.desktop-only
+  display: none
+
++mq(desktop)
+  .desktop
+    &-hide
+      display: none
+    &-show
+      display: inline
+    &-only
+      display: block
+
+.animate
+  transition: 0.3s
+  &:not(.b-loaded)
+    opacity: 0

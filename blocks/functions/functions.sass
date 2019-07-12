@@ -1,0 +1,21 @@
+@import '../variables/variables'
+
+/* Получает значение свойства без единиц измерения */
+@function strip-unit($value)
+  @return $value / ($value * 0 + 1)
+
+/* Функции для создания responsive страниц
+ Указываются величины от и до.
+ При ширине экрана $min-vw величина будет $from
+ При ширине экрана $max-vw величина будет $to
+ в промежутке она будет плавно, линейно увеличиваться
+ */
+@function mobileToTablet($from, $to, $min-vw: $bp1, $max-vw: $bp2)
+  @return calc(#{$from} + #{strip-unit($to - $from)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+
+@function tabletToDesktop($from, $to, $min-vw: $bp2, $max-vw: $bp3)
+  @return calc(#{$from} + #{strip-unit($to - $from)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+
+@function desktopToWideScreen($from, $to, $min-vw: $bp3, $max-vw: $bp4)
+  @return calc(#{$from} + #{strip-unit($to - $from)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+
