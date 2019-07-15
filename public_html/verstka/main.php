@@ -12,25 +12,29 @@
     <script type="text/javascript" src="/local/frontend/local/main/main.js"></script>
 </head>
 <body>
-<header class="header ">
-    <div class="container">
-        <div class="block-top-nav">
-            <div class="block-top-nav__logo block-logo">
-                <img class="logo" src="/local/images/logo.png" alt="">
+<header>
+    <div class="full_section">
+        <div class="container container_flex">
+            <div class="mobil-menu__block-button" onclick="toggle_menu(true)">
+                <span class="mobil-menu__button"></span>
             </div>
-            <div class="block-top-nav__nav">
-                <ul class="top-nav ">
-                    <li class="top-nav__element"><a href="#" class="top-nav__element-link">Каталог</a></li>
-                    <li class="top-nav__element"><a href="#" class="top-nav__element-link">Наши проекты</a></li>
-                    <li class="top-nav__element"><a href="#" class="top-nav__element-link">Отследить заказ</a></li>
-                    <li class="top-nav__element"><a href="#" class="top-nav__element-link">Блог</a></li>
-                    <li class="top-nav__element"><a href="#" class="top-nav__element-link">О нас</a></li>
-                    <li class="top-nav__element"><a href="#" class="top-nav__element-link">Контакты</a></li>
-                    <li class="top-nav__element d-none"><a href="#" class="top-nav__element-link"><img
-                            src="/local/images/search.png" alt="" width="25" height="25"></a></li>
-                </ul>
+            <div class="logo">
+                <a href="#" class="logo__link"><img src="/local/images/logo.png" alt="логотип" class="logo__img"></a>
             </div>
-            <div class="main-nav-block-button"><span class="main-nav-button"></span></div>
+            <menu class="top-menu">
+                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Каталог</a></li>
+                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Наши проекты</a></li>
+                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Отследить заказ</a></li>
+                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Блог</a></li>
+                <li class="top-menu__element"><a class="top-menu__element-link" href="#">О нас</a></li>
+                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Контакты</a></li>
+            </menu>
+            <div class="search">
+                <a href="#" class="search__link"></a>
+                <div class="input_search_area">
+                    <input type="text">
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -432,5 +436,16 @@
         </div>
     </div>
 </footer>
+<div class="mobile_menu" id="mobile_menu" onclick="toggle_menu(false)">
+    <div class="menu_sidebar">
+        <ul class="menu-list">
+            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Услуги</a></li>
+            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Каталог</a></li>
+            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Отследить заказ</a></li>
+            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Блог</a></li>
+            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Контакты</a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
