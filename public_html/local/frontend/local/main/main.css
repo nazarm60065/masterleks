@@ -51,9 +51,12 @@ header menu {
     width: 100%;
     padding: 30px 20px;
     color: #000000 !important;
+    transition: 0.2s;
 }
 
-.top-menu__element:hover {
+.top-menu__element:hover .top-menu__element-link{
+    color: #ff0000 !important;
+    transition: 0.2s;
 }
 
 .search {
@@ -63,16 +66,26 @@ header menu {
     margin-right: -50px
 }
 
-header .search a {
+.search__link {
     display: inline-block;
-    background-image: url("/local/images/search.png");
+
     background-repeat: no-repeat;
     background-position: 50%;
     width: 25px;
     height: 25px;
     background-size: contain;
 }
+.icon-search{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2s;
 
+}
+.icon-search:hover{
+    color: #ff0000;
+    transition: 0.2s;
+}
 header .search .input_search_area {
     position: absolute;
     right: 100%;
@@ -179,7 +192,7 @@ header .search .input_search_area input {
 
 .mobile_menu .menu_sidebar .menu-list {
     list-style-type: none;
-    margin: 60px 0 10px 0;
+    margin: 100px 0 10px 0;
 }
 
 .mobile_menu .menu_sidebar .menu-list-item {
@@ -311,7 +324,7 @@ body{
 }
 .top-block__img{
     width: 59%;
-    height: 800px;
+    object-fit: cover;
 }
 .top-block__title{
     position: absolute;
@@ -346,6 +359,14 @@ body{
     border: none;
     padding: 26px;
     font-weight: 700;
+    transition: 0.2s;
+
+
+}
+.top-block__button:hover{
+    background: #c70000;
+    transition: 0.2s;
+    color: #fff;
 
 }
 /*top-block*/
@@ -383,6 +404,11 @@ body{
     background: #00000075;
     width: 100%;
     height: 100%;
+    transition: 0.3s;
+}
+.slick-slide:hover .slick-slider__blackout{
+    background: #00000030;
+    transition: 0.3s;
 }
 .slider-slick__block-text{
     position: absolute;
@@ -424,6 +450,7 @@ ul.slick-dots li button:before {
     border-radius: 20px;
     background-color: #00000075;
     opacity: 1;
+    cursor: pointer;
 }
 ul.slick-dots li.slick-active button:before {
     background-color: #14203B;
@@ -489,7 +516,17 @@ ul.slick-dots li.slick-active button:before {
      color: #fff;
      font-size: 37px;
      font-weight: 700;
- }
+    display: inline-block;
+    font-kerning: none;
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+
+
+}
+.slick-slide:hover .category__link{
+    border-bottom: 2px solid #fff;
+    transition: 0.2s;
+}
 .category__link:hover{
     color: #fff;
     font-size: 37px;

@@ -48,12 +48,22 @@ header menu {
 margin-right: -50px}
 header .search a {
     display: inline-block;
-    background-image: url("/local/images/search.png");
     background-repeat: no-repeat;
     background-position: 50%;
     width: 25px;
     height: 25px;
     background-size: contain; }
+.icon-search{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2s;
+
+}
+.icon-search:hover{
+    color: #ff0000;
+    transition: 0.2s;
+}
 header .search .input_search_area {
     position: absolute;
     right: 100%;
@@ -216,7 +226,10 @@ header .search .input_search_area input {
 .block-category{
     position: relative;
     height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .blackout{
     position: absolute;
     top: 0;
@@ -224,7 +237,12 @@ header .search .input_search_area input {
     width: 100%;
     height: 100%;
     background: #00000075;
+    transition: 0.3s;
 
+}
+.block-category:hover .blackout{
+    background: #00000030;
+    transition: 0.3s;
 }
 .category__block-title{
     position: absolute;

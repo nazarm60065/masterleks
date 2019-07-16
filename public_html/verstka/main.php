@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/local/icons/icomoon/style.css">
     <link rel="stylesheet" href="/local/frontend/local/main/main.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900i|Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/local/js/jquery.slick/slick.css"/>
+    <link rel="icon" href=​"local/images/favicon.ico" type="image/x-icon">
 
     <script type="text/javascript" src="/local/js/jquery2/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/local/js/jquery.slick/slick.min.js"></script>
@@ -30,7 +32,7 @@
                 <li class="top-menu__element"><a class="top-menu__element-link" href="#">Контакты</a></li>
             </menu>
             <div class="search">
-                <a href="#" class="search__link"></a>
+                <a href="#" class="search__link"><span class="input-i icon-search"></span></a>
                 <div class="input_search_area">
                     <input type="text">
                 </div>
@@ -46,7 +48,7 @@
             <img class="top-block__img" src="/local/images/main/pic_1.jpg" alt="">
             <div class="top-block__title"><h1 class="top-block__title-text">Как ты<br>захочешь</h1>
                 <div class="top-block__block-button">
-                <button class="top-block__button">Заказать быстро</button>
+                <a href="#" class="top-block__button">Заказать быстро</a>
             </div></div>
 
         </div>
