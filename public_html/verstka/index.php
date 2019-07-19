@@ -20,7 +20,10 @@ $mustache = new Mustache_Engine([
     <h1>Новый проект</h1>
     <h2>Страницы:</h2>
     <ul>
-        <li><a href="index-page.php">Главная страница</a></li>
+        <li><a href="main.php">Главная страница</a></li>
+        <li><a href="catalog.php">Каталог</a></li>
+        <li><a href="kitchen.php">Кухни</a></li>
+        <li><a href="catalog-kitchen.php">Детальная кухни</a></li>
     </ul>
 </main>
 </body>
