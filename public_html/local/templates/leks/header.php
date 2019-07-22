@@ -70,14 +70,25 @@ $APPLICATION->ShowPanel();
                                                         class="logo__img"></a>
                 <? endif; ?>
             </div>
-            <menu class="top-menu">
-                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Каталог</a></li>
-                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Наши проекты</a></li>
-                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Отследить заказ</a></li>
-                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Блог</a></li>
-                <li class="top-menu__element"><a class="top-menu__element-link" href="#">О нас</a></li>
-                <li class="top-menu__element"><a class="top-menu__element-link" href="#">Контакты</a></li>
-            </menu>
+
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "top_menu",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "",
+                    "COMPONENT_TEMPLATE" => "top_menu",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "ROOT_MENU_TYPE" => "top",
+                    "USE_EXT" => "Y"
+                )
+            );?>
+
             <div class="search">
                 <a href="#" class="search__link"><span class="input-i icon-search"></span></a>
                 <div class="input_search_area">

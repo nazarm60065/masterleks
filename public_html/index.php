@@ -3,348 +3,88 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Мастер Лекс");
 ?>
 
-    <!--top-block-->
-    <div class="main-blackout "></div>
-    <section class="top-block">
-        <div class="top-block__img-block">
-            <img class="top-block__img" src="/local/images/main/pic_1.jpg" alt="">
-            <div class="top-block__title"><h1 class="top-block__title-text">Как ты<br>захочешь</h1>
-                <div class="top-block__block-button">
-                    <a href="#" class="top-block__button">Заказать быстро</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="slider-1 slider section">
-        <div class="container">
-            <div class="section__sub-title section__sub-title_mobile-center">
-                Каталог
-            </div>
-            <div class="slider__block-slider">
-                <div class="container">
-                    <div class="slider-slick">
-
-
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_кухни.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Кухни</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_шкафы.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Шкафы</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_прихожие.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Прихожие</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_детские.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Детские</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_кухни.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Кухни</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_шкафы.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Шкафы</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_прихожие.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Прихожие</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_детские.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Детские</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_шкафы.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Шкафы</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_прихожие.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Прихожие</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_детские.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Детские</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<? $APPLICATION->IncludeComponent(
+    "zlabs:main.safe-include",
+    "top-block-main",
+    array(
+        "COMPONENT_TEMPLATE" => "top-block-main",
+        "title" => "Как ты<br>захочешь",
+        "image" => "/local/images/main/pic_1.jpg"
+    ),
+    false
+); ?>
+<? $APPLICATION->IncludeComponent(
+    "bitrix:catalog.section.list",
+    "section-main",
+    Array(
+        "ADD_SECTIONS_CHAIN" => "Y",
+        "CACHE_GROUPS" => "Y",
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "COUNT_ELEMENTS" => "N",
+        "HEADLINE" => "Каталог",
+        "HIDE_SECTION_NAME" => "N",
+        "IBLOCK_ID" => "8",
+        "IBLOCK_TYPE" => "leks_catalog",
+        "SECTION_CODE" => "",
+        "SECTION_FIELDS" => array("", ""),
+        "SECTION_ID" => $_REQUEST["SECTION_ID"],
+        "SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
+        "SECTION_USER_FIELDS" => array("", ""),
+        "SHOW_PARENT_NAME" => "Y",
+        "TOP_DEPTH" => "1"
+    )
+); ?>
+    <section>
+        <? $APPLICATION->IncludeComponent(
+            "bitrix:catalog.section.list",
+            "section-main-with-prices",
+            Array(
+                "ADD_SECTIONS_CHAIN" => "Y",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "36000000",
+                "CACHE_TYPE" => "A",
+                "COMPONENT_TEMPLATE" => "section-main-with-prices",
+                "COUNT_ELEMENTS" => "N",
+                "HEADLINE" => "Каталог",
+                "HIDE_SECTION_NAME" => "N",
+                "IBLOCK_ID" => "8",
+                "IBLOCK_TYPE" => "leks_catalog",
+                "SECTION_CODE" => "",
+                "SECTION_FIELDS" => array(0 => "", 1 => "NAME", 2 => "PICTURE", 3 => "DETAIL_PICTURE", 4 => "",),
+                "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                "SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
+                "SECTION_USER_FIELDS" => array(0 => "", 1 => "",),
+                "SHOW_PARENT_NAME" => "Y",
+                "TOP_DEPTH" => "1"
+            )
+        ); ?>
     </section>
     <section>
         <div class="container">
-            <div class="category">
-                <div class="block-50">
-                    <div class="category-block">
-                        <a href="#" class="link-absolute"></a>
-                        <div class="category__title">Кухни</div>
-                        <div class="category__block-price"><span class="category__price">от 123456 руб.</span></div>
-                        <div class="category__block-img"><img src="/local/images/main/кухня.jpg" alt=""
-                                                              class="category_img"></div>
-                        <div class="category__block-link"><a href="#" class="category__link">Подробнее</a></div>
-                    </div>
-                </div>
-                <div class="block-50">
-                    <div class="category-block">
-                        <a href="#" class="link-absolute"></a>
-                        <div class="category__title">Шкафы</div>
-                        <div class="category__block-price"><span class="category__price">от 123456 руб.</span></div>
-                        <div class="category__block-img"><img src="/local/images/main/шкафы.jpg" alt=""
-                                                              class="category_img"></div>
-                        <div class="category__block-link"><a href="#" class="category__link">Подробнее</a></div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="section__sub-title section__sub-title_right">
-                Наши проекты
-            </div>
-
-
-            <div class="slider__block-slider">
-                <div class="container">
-                    <div class="slider-slick">
-
-
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_кухни.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Кухни</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_шкафы.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Шкафы</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_прихожие.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Прихожие</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_детские.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Детские</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_кухни.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Кухни</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_шкафы.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Шкафы</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_прихожие.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Прихожие</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_детские.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Детские</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_шкафы.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Шкафы</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_прихожие.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Прихожие</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slider-slick__container"
-                                 style="background-image: url('/local/images/main/каталог_детские.jpg')">
-                                <a href="#" class="link-absolute"></a>
-                                <div class="slick-slider__blackout">
-                                    <div class="slider-slick__block-text">
-                                        <span class="slider-slick__text">Детские</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:catalog.section.list",
+                "our-projects",
+                Array(
+                    "ADD_SECTIONS_CHAIN" => "Y",
+                    "CACHE_GROUPS" => "Y",
+                    "CACHE_TIME" => "36000000",
+                    "CACHE_TYPE" => "A",
+                    "COMPONENT_TEMPLATE" => "our-projects",
+                    "COUNT_ELEMENTS" => "N",
+                    "HEADLINE" => "Наши проекты",
+                    "HIDE_SECTION_NAME" => "N",
+                    "IBLOCK_ID" => "8",
+                    "IBLOCK_TYPE" => "leks_catalog",
+                    "SECTION_CODE" => "",
+                    "SECTION_FIELDS" => array(0 => "NAME", 1 => "PICTURE", 2 => "DETAIL_PICTURE", 3 => "",),
+                    "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                    "SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
+                    "SECTION_USER_FIELDS" => array(0 => "", 1 => "",),
+                    "SHOW_PARENT_NAME" => "Y",
+                    "TOP_DEPTH" => "1"
+                )
+            ); ?>
         </div>
     </section>
     <section style="height: 600px">
