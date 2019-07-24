@@ -50,9 +50,42 @@
                     <div class="footer_title d-tablet-mobile-none"><a href="#" class="footer__title-link">Контакты</a></div>
                     <div class="footer__nav">
                         <ul class="footer__block-nav">
-                            <li class="footer__nav-element footer__nav-element_text-big">Адресс</li>
-                            <li class="footer__nav-element footer__nav-element_text-big"><a href="tel: +00000000" class="footer__nav-link ">+999 999 99 99</a></li>
-                            <li class="footer__nav-element footer__nav-element_text-big"><a href="mailto:email@mail.ru" class="footer__nav-link ">email</a></li>
+                            <li class="footer__nav-element footer__nav-element_text-big">
+                                <?$APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "AREA_FILE_SUFFIX" => "inc",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/local/include_areas/address.php"
+                                    )
+                                );?>
+                            </li>
+                            <li class="footer__nav-element footer__nav-element_text-big">
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "AREA_FILE_SUFFIX" => "inc",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/local/include_areas/footer_phone.php"
+                                    )
+                                ); ?>
+                            </li>
+                            <li class="footer__nav-element footer__nav-element_text-big">
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "AREA_FILE_SUFFIX" => "inc",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/local/include_areas/footer_email.php"
+                                    )
+                                ); ?>
+                            </li>
                         </ul>
                     </div>
                 </div>
