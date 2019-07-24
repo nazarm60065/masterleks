@@ -169,6 +169,7 @@ ul.slick-dots li.slick-active button:before {
     padding: 0 20px;
     color: #fff;
     box-sizing: border-box;
+    position: relative;
 }
 .category-block{
     background: #000;

@@ -16,12 +16,14 @@ echo "<html lang=\"{$lang}\">";
     <?
     $APPLICATION->ShowHead();
     $APPLICATION->SetAdditionalCSS('/local/icons/icomoon/style.css');
+    $APPLICATION->SetAdditionalCSS('/local/js/fancybox-master/dist/jquery.fancybox.css');
     $APPLICATION->SetAdditionalCSS('/local/frontend/local/style/style.css');
     $APPLICATION->SetAdditionalCSS('/local/frontend/local/main/main.css');
     $APPLICATION->SetAdditionalCSS('/local/js/jquery.slick/slick.css');
     $APPLICATION->SetAdditionalCSS('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900i|Roboto:400,500,700&display=swap&subset=cyrillic');
 
     $APPLICATION->AddHeadScript('/local/js/jquery2/jquery-2.2.4.min.js');
+    $APPLICATION->AddHeadScript('/local/js/fancybox-master/dist/jquery.fancybox.min.js');
     $APPLICATION->AddHeadScript('/local/js/jquery.slick/slick.min.js');
     $APPLICATION->AddHeadScript('/local/frontend/local/main/main.js');
     $APPLICATION->AddHeadScript('/local/frontend/local/style/style.js');
