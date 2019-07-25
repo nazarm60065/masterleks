@@ -232,6 +232,12 @@ ul.slick-dots li.slick-active button:before {
     position: absolute;
 }
 
+/*review block*/
+
+.flamp-reviews{
+    margin: 0 0 70px 0;
+}
+
 @media (max-width: 767px) {
     .logo{
        /* width: 60px;
