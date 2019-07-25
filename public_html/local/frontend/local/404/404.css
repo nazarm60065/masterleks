@@ -1,0 +1,36 @@
+.error_404_content{
+    min-height: calc(100vh - 347px);
+    padding: 100px 0 0 0;
+    box-sizing: border-box;
+}
+
+.error_404_content .left_part,
+.error_404_content .right_part {
+    display: inline-block;
+    width: 49%;
+}
+
+.error_404_content .left_part .page_not_fount_title {
+    font-size: 200px;
+    line-height: 155px;
+    margin: 0 0 60px 0;
+    font-weight: 800;
+}
+
+.error_404_content .left_part .sub_title {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.error_404_content .left_part .button {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff350e;
+    color: #fff;
+    font-weight: 500;
+}
+
