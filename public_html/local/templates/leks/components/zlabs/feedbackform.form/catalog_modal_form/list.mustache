@@ -1,0 +1,10 @@
+<div class="feedback-form__group">
+    <select name="{{code}}"
+            class="feedback-form__control feedback-form__control_type_list{{requiredCssClass}}"
+            title="{{placeholder}}">
+        <option value="">{{placeholder}}</option>
+        {{#possibleValues}}
+            <option {{selected}}>{{value}}</option>
+        {{/possibleValues}}
+    </select>
+</div>

@@ -15,7 +15,11 @@ use \Bitrix\Main\Localization\Loc;
  * @var string $templateFolder
  */
 
-$this->setFrameMode(true); ?>
+$this->setFrameMode(true);
+
+global $goodName;
+$goodName = $arResult['NAME'];
+?>
 
 <div class="flex-container">
     <div class="block-65">
@@ -55,6 +59,6 @@ $this->setFrameMode(true); ?>
         </div>
     </div>
     <div class="block-30 text-right">
-        <a href="#" class="button">Заказать</a>
+        <a href="#catalog_modal_form" class="button feedback-form-link">Заказать</a>
     </div>
 </div>

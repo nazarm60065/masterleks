@@ -1,0 +1,31 @@
+<form class="feedback-form{{additional_css_class}} modal-form"
+      id="{{ajax_component_id}}"
+      enctype="multipart/form-data"
+      method="post"
+      action="{{action}}">
+    {{#title}}
+        <div class="feedback-form__title">
+            <div class="feedback-form__title-value">{{{title}}}</div>
+            {{#sub_title}}
+                <div class="feedback-form__title-subtitle">{{{sub_title}}}</div>
+            {{/sub_title}}
+        </div>
+    {{/title}}
+    {{#html_fields}}
+        {{{html}}}
+    {{/html_fields}}
+    <div class="feedback-form__submit-container">
+        <button class="btn btn_main connect__btn feedback-form__submit button fb_btn" type="submit"
+                name="submit" {{disabled}}>{{submit_text}}</button>
+        <div class="feedback-form__footnote">{{{footnote_text}}}</div>
+    </div>
+    {{#user_consent}}
+        <div class="feedback-form__user-consent">
+            {{{user_consent}}}
+        </div>
+    {{/user_consent}}
+</form>
+{{#is_popup}}
+    <a href="#{{ajax_component_id}}" class="feedback-form-link" rel="nofollow"
+       title="{{link_to_form_text}}">{{{link_to_form_text}}}</a>
+{{/is_popup}}
