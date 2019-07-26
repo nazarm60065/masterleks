@@ -12,10 +12,11 @@ use Bitrix\Main\Loader;
 global $goodName;
 
 $APPLICATION->IncludeComponent(
-	"zlabs:feedbackform.form",
-	"catalog_modal_form",
+	"zlabs:feedbackform.form", 
+	"catalog_modal_form", 
 	array(
 		"email_to" => array(
+			0 => "f1gnerokk@gmail.com",
 		),
 		"event_message_id" => array(
 			0 => "10",
@@ -48,7 +49,7 @@ $APPLICATION->IncludeComponent(
 		"field_3_required" => "N",
 		"field_3_title" => "Товар",
 		"field_3_type" => "ZLabs\\FeedbackForm\\Field\\HiddenField",
-        "field_3_value" => $goodName,
+		"field_3_value" => $goodName,
 		"footnote_text" => "Поля отмеченные * обязательны для заполнения",
 		"goals" => array(
 		),
