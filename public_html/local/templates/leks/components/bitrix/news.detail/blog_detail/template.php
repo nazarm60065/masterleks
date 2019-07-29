@@ -1,4 +1,4 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 /** @var array $arParams */
 /** @var array $arResult */
 /** @global CMain $APPLICATION */
@@ -12,11 +12,11 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<h1 class="blog_detail_title"><?$APPLICATION->ShowTitle()?></h1>
-<div class="blog_date"><?=$arResult["DISPLAY_ACTIVE_FROM"]?></div>
+<div class="blog_date"><?= $arResult["DISPLAY_ACTIVE_FROM"] ?></div>
 <div class="blog_detail">
-    <?if(!empty($arResult['DETAIL_PICTURE'])):?>
-        <img src="<?=$arResult['RESIZE_IMAGE']['src']?>" width="<?=$arResult['RESIZE_IMAGE']['width']?>" height="<?=$arResult['RESIZE_IMAGE']['height']?>">
-    <?endif;?>
-    <?=$arResult["DETAIL_TEXT"];?>
+    <? if (!empty($arResult['DETAIL_PICTURE'])): ?>
+        <img src="<?= $arResult['RESIZE_IMAGE']['src'] ?>" width="<?= $arResult['RESIZE_IMAGE']['width'] ?>"
+             height="<?= $arResult['RESIZE_IMAGE']['height'] ?>">
+    <? endif; ?>
+    <?= $arResult["DETAIL_TEXT"]; ?>
 </div>

@@ -3,7 +3,8 @@
   "type": "project",
   "require": {
     "php": ">=7.0",
-    "mustache/mustache": "^2.12"
+    "mustache/mustache": "^2.12",
+    "z-labs/deferred-functions": "^1.0"
   },
   "autoload": {
     "psr-4": {
@@ -12,5 +13,11 @@
   },
   "extra": {
     "bitrix-dir": "public_html/local"
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:z-labs/deferred-functions.git"
+    }
+  ]
 }

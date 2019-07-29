@@ -45,9 +45,9 @@ $goodName = $arResult['NAME'];
 <div class="flex-container">
     <div class="block-65">
         <div class="flex-container">
-            <div class="detail-element detail-element__title">
+            <h1 class="detail-element detail-element__title">
                 <?= $arResult['NAME'] ?>
-            </div>
+            </h1>
             <div class="detail-element detail-element__price">
                 <?= $arResult['DISPLAY_PROPERTIES']['PRICE']['VALUE'] ?> руб.
             </div>

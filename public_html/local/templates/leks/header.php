@@ -109,4 +109,14 @@ $APPLICATION->ShowPanel();
     <? if (!$isMainPage) : ?>
         <section>
             <div class="container">
+                <? echo \ZLabs\DeferredFunctions\ShowTitle::show('<h1 class="h1 bold">#title#</h1>') ?>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:breadcrumb",
+                    "breadcrumbs",
+                    Array(
+                        "PATH" => "",
+                        "SITE_ID" => "s2",
+                        "START_FROM" => "0"
+                    )
+                );?>
     <? endif; ?>

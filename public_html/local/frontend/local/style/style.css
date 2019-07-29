@@ -21,6 +21,11 @@ body{
 .container{
     margin: 0 auto;
 }
+.h1 {
+    font-size: 46px;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+}
 
 /*menu*/
 .full_section {
@@ -68,6 +73,11 @@ header menu {
 .top-menu__element:hover .top-menu__element-link{
     color: #ff0000;
     transition: 0.2s;
+}
+.top-menu__element-link:focus,
+.search__link:focus {
+    color: #000000;
+    text-decoration: none;
 }
 .search {
     display: flex;

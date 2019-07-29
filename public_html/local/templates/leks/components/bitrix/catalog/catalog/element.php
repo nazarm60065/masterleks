@@ -13,6 +13,8 @@
 
 /** @var CBitrixComponent $component */
 
+$APPLICATION->SetPageProperty( 'not_show_h1', 'Y' );
+
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
 

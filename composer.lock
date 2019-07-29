@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "dfe9ceb655460f68c8c09ce22604be71",
-    "content-hash": "4804af8add444cb2acc7c9114d734e71",
+    "content-hash": "288edd0c469a1f76ca9bffc7957ff29d",
     "packages": [
         {
             "name": "mustache/mustache",
@@ -51,7 +50,44 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2017-07-11 12:54:05"
+            "time": "2017-07-11T12:54:05+00:00"
+        },
+        {
+            "name": "z-labs/deferred-functions",
+            "version": "1.0.02",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:z-labs/deferred-functions.git",
+                "reference": "dc7e740d97ed811e46326e87bfc3b120e0ba8303"
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZLabs\\DeferredFunctions\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Granin",
+                    "email": "k.granin@z-labs.ru"
+                }
+            ],
+            "description": "Deferred functions for bitrix",
+            "keywords": [
+                "bitrix"
+            ],
+            "support": {
+                "email": "k.granin@z-labs.ru",
+                "issues": "https://bitbucket.org/z-labs/deferred-functions/issues",
+                "source": "https://bitbucket.org/z-labs/deferred-functions/src/"
+            },
+            "time": "2018-07-25T03:47:17+00:00"
         }
     ],
     "packages-dev": [],
