@@ -113,7 +113,7 @@ $APPLICATION->SetTitle("Каталог");
 		"SECTION_BACKGROUND_IMAGE" => "-",
 		"SECTION_COUNT_ELEMENTS" => "N",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
-		"SECTION_TOP_DEPTH" => "2",
+		"SECTION_TOP_DEPTH" => "1",
 		"SEF_FOLDER" => "/catalog/",
 		"SEF_MODE" => "Y",
 		"SEF_URL_TEMPLATES" => Array("compare"=>"compare.php?action=#ACTION_CODE#","element"=>"#SECTION_CODE#/#ELEMENT_CODE#/","section"=>"#SECTION_CODE#/","sections"=>"","smart_filter"=>"#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/"),
