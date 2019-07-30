@@ -1,0 +1,17 @@
+@import "/bitrix/css/main/font-awesome.min.css";
+
+.site_route {
+    margin: 20px 0;
+    color: #7c7c7c;
+    font-size: 12px;
+}
+
+.site_route .angle-right {
+    margin: 0 5px;
+}
+
+.site_route a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+

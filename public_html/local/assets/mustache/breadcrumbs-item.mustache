@@ -1,0 +1,10 @@
+{{^isLast}}
+    <a href="{{href}}" title="{{title}}">
+        <span itemprop="name">{{text}}</span> <i class="angle-right fa fa-angle-right"></i>
+    </a>
+{{/isLast}}
+{{#isLast}}
+    <span itemprop="name">{{text}}</span>
+{{/isLast}}
+
+

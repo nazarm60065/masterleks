@@ -23,7 +23,9 @@ echo "<html lang=\"{$lang}\">";
     $APPLICATION->SetAdditionalCSS('/local/frontend/local/main/main.css');
     $APPLICATION->SetAdditionalCSS('/local/js/jquery.slick/slick.css');
     $APPLICATION->SetAdditionalCSS('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900i|Roboto:400,500,700&display=swap&subset=cyrillic');
+    $APPLICATION->SetAdditionalCSS('/bitrix/css/main/font-awesome.min.css');
     $APPLICATION->SetAdditionalCSS('/local/frontend/local/404/404.css');
+    $APPLICATION->SetAdditionalCSS('/local/frontend/local/breadcrumbs/style.css');
 
     $APPLICATION->AddHeadScript('/local/assets/vendor/jquery.js');
     $APPLICATION->AddHeadScript('/local/assets/vendor/fancybox/jquery.fancybox.js');
@@ -113,15 +115,5 @@ $APPLICATION->ShowPanel();
         <section>
             <div class="container">
                 <? echo \ZLabs\DeferredFunctions\ShowTitle::show('<h1 class="h1 bold">#title#</h1>') ?>
-                <?if (ERROR_404 !== "Y"):?>
-                    <?$APPLICATION->IncludeComponent(
-                        "bitrix:breadcrumb",
-                        "breadcrumbs",
-                        Array(
-                            "PATH" => "",
-                            "SITE_ID" => "s2",
-                            "START_FROM" => "0"
-                        )
-                    );?>
-                <?endif;?>
+                <? echo ZLabs\DeferredFunctions\ShowNavChainInHeader::show() ?>
     <? endif; ?>

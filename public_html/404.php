@@ -5,6 +5,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetAdditionalCSS('/local/frontend/local/404/404.css');
 $APPLICATION->SetTitle("Страница не найдена");
 $APPLICATION->SetPageProperty( 'not_show_h1', 'Y' );
+$APPLICATION->SetPageProperty( 'not_show_nav_chain_in_header', 'Y' );
 ?>
     <div class="error_404_content">
         <div class="left_part">
