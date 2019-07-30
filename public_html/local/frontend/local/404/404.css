@@ -1,6 +1,6 @@
 .error_404_content{
     min-height: calc(100vh - 347px);
-    padding: 100px 0 0 0;
+    padding: 50px 0;
     box-sizing: border-box;
 }
 
@@ -32,5 +32,6 @@
     background-color: #ff350e;
     color: #fff;
     font-weight: 500;
+    padding: 0 !important;
 }
 
