@@ -1,5 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetAdditionalCSS('/local/frontend/local/main/main.css');
+$APPLICATION->AddHeadScript('/local/frontend/local/main/main.js');
 $APPLICATION->SetTitle("Мастер Лекс");
 ?><?$APPLICATION->IncludeComponent(
 	"zlabs:main.safe-include",

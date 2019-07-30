@@ -93,16 +93,22 @@
         </div>
     </div>
 </footer>
-<div class="mobile_menu" id="mobile_menu" onclick="toggle_menu(false)">
-    <div class="menu_sidebar">
-        <ul class="menu-list">
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Услуги</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Каталог</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Отследить заказ</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Блог</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Контакты</a></li>
-        </ul>
-    </div>
-</div>
+<?$APPLICATION->IncludeComponent(
+    "bitrix:menu",
+    "top_menu_mobi",
+    Array(
+        "ALLOW_MULTI_SELECT" => "N",
+        "CHILD_MENU_TYPE" => "",
+        "COMPONENT_TEMPLATE" => "top_menu",
+        "DELAY" => "N",
+        "MAX_LEVEL" => "1",
+        "MENU_CACHE_GET_VARS" => array(),
+        "MENU_CACHE_TIME" => "3600",
+        "MENU_CACHE_TYPE" => "N",
+        "MENU_CACHE_USE_GROUPS" => "Y",
+        "ROOT_MENU_TYPE" => "top",
+        "USE_EXT" => "Y"
+    )
+);?>
 </body>
 </html>

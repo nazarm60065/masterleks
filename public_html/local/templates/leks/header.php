@@ -20,7 +20,6 @@ echo "<html lang=\"{$lang}\">";
     $APPLICATION->SetAdditionalCSS('/local/icons/icomoon/style.css');
     $APPLICATION->SetAdditionalCSS('/local/assets/vendor/fancybox/jquery.fancybox.css');
     $APPLICATION->SetAdditionalCSS('/local/frontend/local/style/style.css');
-    $APPLICATION->SetAdditionalCSS('/local/frontend/local/main/main.css');
     $APPLICATION->SetAdditionalCSS('/local/js/jquery.slick/slick.css');
     $APPLICATION->SetAdditionalCSS('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900i|Roboto:400,500,700&display=swap&subset=cyrillic');
     $APPLICATION->SetAdditionalCSS('/bitrix/css/main/font-awesome.min.css');
@@ -34,7 +33,6 @@ echo "<html lang=\"{$lang}\">";
     $APPLICATION->AddHeadScript('/local/assets/vendor/mustache/mustache.min.js');
     $APPLICATION->AddHeadScript('/local/js/feedback.js');
     $APPLICATION->AddHeadScript('/local/js/jquery.slick/slick.min.js');
-    $APPLICATION->AddHeadScript('/local/frontend/local/main/main.js');
     $APPLICATION->AddHeadScript('/local/frontend/local/style/style.js');
     ?>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">

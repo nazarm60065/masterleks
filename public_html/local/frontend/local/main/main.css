@@ -257,12 +257,12 @@ ul.slick-dots li.slick-active button:before {
         display: none !important;
     }
     header{
-        z-index: 10;
-        position: absolute;
+        z-index: 10 !important;
+        position: absolute !important;
         top: 0;
         left: 0;
         right: 0;
-        background: transparent;
+        background-color: transparent !important;
     }
 
     .top-block__title{
@@ -506,12 +506,12 @@ ul.slick-dots li.slick-active button:before {
         display: none !important;
     }
     header{
-        z-index: 10;
-        position: absolute;
+        z-index: 10 !important;
+        position: absolute !important;
         top: 0;
         left: 0;
         right: 0;
-        background: transparent;
+        background-color: transparent !important;
     }
     .logo{
        /* width: 70px;
