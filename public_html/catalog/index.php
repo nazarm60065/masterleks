@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Каталог");
 	"catalog",
 	Array(
 		"ACTION_VARIABLE" => "",
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
