@@ -18,7 +18,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 $this->setFrameMode(true);
 
 if (!empty($arResult)) : ?>
-<div class="mobile_menu" id="mobile_menu" onclick="toggle_menu(false)">
+<div class="mobile_menu" id="mobile_menu" onclick="toggle_menu(true)">
     <div class="menu_sidebar">
         <ul class="menu-list">
         <?php
@@ -79,11 +79,4 @@ if (!empty($arResult)) : ?>
 </div>
 <?php
 endif;?>
-
-
-
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Каталог</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Отследить заказ</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Блог</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-item__link">Контакты</a></li>
 
