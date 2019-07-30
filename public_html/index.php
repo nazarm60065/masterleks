@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Мастер Лекс");
 	"top-block-main",
 	Array(
 		"image" => "/local/images/main/pic_1.jpg",
-		"title" => "Мебель<br>как ты<br>захочешь"
+		"title" => "Мебель,<br>как ты<br>захочешь"
 	)
 );?> <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",
