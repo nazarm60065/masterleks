@@ -12,6 +12,9 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 
+$APPLICATION->SetAdditionalCSS('/local/frontend/local/catalog/catalog.css');
+$APPLICATION->AddHeadScript('/local/frontend/local/catalog/catalog.js');
+
 $this->setFrameMode(true);
 
 $APPLICATION->IncludeComponent(

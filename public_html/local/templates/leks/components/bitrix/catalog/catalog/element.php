@@ -14,6 +14,8 @@
 /** @var CBitrixComponent $component */
 
 $APPLICATION->SetPageProperty( 'not_show_h1', 'Y' );
+$APPLICATION->SetAdditionalCSS('/local/frontend/local/kitchen/kitchen.css');
+$APPLICATION->AddHeadScript('/local/frontend/local/kitchen/kitchen.js');
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;

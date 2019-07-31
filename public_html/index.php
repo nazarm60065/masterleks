@@ -11,9 +11,9 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"title" => "Мебель,<br>как ты<br>захочешь"
 	)
 );?> <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list",
-	"section-main",
-	Array(
+	"bitrix:catalog.section.list", 
+	"section-main", 
+	array(
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
@@ -25,18 +25,25 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"IBLOCK_ID" => "7",
 		"IBLOCK_TYPE" => "leks_catalog",
 		"SECTION_CODE" => "",
-		"SECTION_FIELDS" => array(0=>"",1=>"",),
-		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"SECTION_ID" => "360",
 		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
-		"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"SHOW_PARENT_NAME" => "Y",
 		"TOP_DEPTH" => "1"
-	)
+	),
+	false
 );?> <section>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list",
-	"section-main-with-prices",
-	Array(
+	"bitrix:catalog.section.list", 
+	"section-main-with-prices", 
+	array(
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
@@ -48,19 +55,28 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"IBLOCK_ID" => "7",
 		"IBLOCK_TYPE" => "leks_catalog",
 		"SECTION_CODE" => "",
-		"SECTION_FIELDS" => array(0=>"NAME",1=>"PICTURE",2=>"DETAIL_PICTURE",3=>"",),
-		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_FIELDS" => array(
+			0 => "NAME",
+			1 => "PICTURE",
+			2 => "DETAIL_PICTURE",
+			3 => "",
+		),
+		"SECTION_ID" => "360",
 		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
-		"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"SHOW_PARENT_NAME" => "Y",
 		"TOP_DEPTH" => "1"
-	)
+	),
+	false
 );?> </section> <section>
 <div class="container">
 	 <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list",
-	"our-projects",
-	Array(
+	"bitrix:catalog.section.list", 
+	"our-projects", 
+	array(
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
@@ -69,16 +85,25 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"COUNT_ELEMENTS" => "N",
 		"HEADLINE" => "Наши проекты",
 		"HIDE_SECTION_NAME" => "N",
-		"IBLOCK_ID" => "7",
-		"IBLOCK_TYPE" => "leks_catalog",
+		"IBLOCK_ID" => "8",
+		"IBLOCK_TYPE" => "leks_content",
 		"SECTION_CODE" => "",
-		"SECTION_FIELDS" => array(0=>"NAME",1=>"PICTURE",2=>"DETAIL_PICTURE",3=>"",),
+		"SECTION_FIELDS" => array(
+			0 => "NAME",
+			1 => "PICTURE",
+			2 => "DETAIL_PICTURE",
+			3 => "",
+		),
 		"SECTION_ID" => $_REQUEST["SECTION_ID"],
-		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
-		"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+		"SECTION_URL" => "#SITE_DIR#/our-projects/#SECTION_CODE#/",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"SHOW_PARENT_NAME" => "Y",
 		"TOP_DEPTH" => "1"
-	)
+	),
+	false
 );?>
 </div>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

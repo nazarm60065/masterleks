@@ -1,10 +1,5 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetAdditionalCSS('/local/frontend/local/catalog/catalog.css');
-$APPLICATION->AddHeadScript('/local/frontend/local/catalog/catalog.js');
-
-$APPLICATION->SetAdditionalCSS('/local/frontend/local/kitchen/kitchen.css');
-$APPLICATION->AddHeadScript('/local/frontend/local/kitchen/kitchen.js');
 
 $APPLICATION->SetTitle("Каталог");
 ?><?$APPLICATION->IncludeComponent(
@@ -60,7 +55,7 @@ $APPLICATION->SetTitle("Каталог");
 		"FILTER_VIEW_MODE" => "VERTICAL",
 		"IBLOCK_ID" => "7",
 		"IBLOCK_TYPE" => "leks_catalog",
-		"INCLUDE_SUBSECTIONS" => "Y",
+		"INCLUDE_SUBSECTIONS" => "N",
 		"INSTANT_RELOAD" => "N",
 		"LABEL_PROP" => array(),
 		"LAZY_LOAD" => "N",
