@@ -73,15 +73,18 @@ $APPLICATION->SetTitle("Мастер Лекс");
 	false
 );?> </section> <section>
 <div class="container">
+    <div class="section__sub-title section__sub-title_right">
+        Наши проекты
+    </div>
 	 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list", 
-	"our-projects", 
+	"main-our-projects", 
 	array(
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
-		"COMPONENT_TEMPLATE" => "our-projects",
+		"COMPONENT_TEMPLATE" => "main-our-projects",
 		"COUNT_ELEMENTS" => "N",
 		"HEADLINE" => "Наши проекты",
 		"HIDE_SECTION_NAME" => "N",

@@ -12,11 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true); ?>
 
-<div class="section__sub-title section__sub-title_right">
-    <?= $arParams['HEADLINE'] ?>
-</div>
-
-
 <div class="slider__block-slider">
     <div class="container">
         <div class="slider-slick">

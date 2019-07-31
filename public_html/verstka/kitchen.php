@@ -93,7 +93,8 @@
                         </div>
                         <div class="block-100">
                             <div class="block-category block-category_min">
-                                <a class="block-category__link" data-fancybox="gallery" href="/local/images/main/каталог_кухни.jpg"><img class="block-category__img" src="/local/images/main/каталог_кухни.jpg"></a>
+                                <a class="block-category__link more-photos" data-fancybox="gallery" href="/local/images/main/каталог_кухни.jpg"><span class="more-photos_text">Еще 3</span></a>
+                                <img class="block-category__img" src="/local/images/main/каталог_кухни.jpg">
                             </div>
                         </div>
                     </div>
@@ -109,14 +110,14 @@
                             12345 руб.
                         </div>
 
-
+                    </div>
                         <div class="detail-element detail-element__description">
                             description description description description description description description
                             description description description
                             description description description description description description description
                             description description description
                         </div>
-                    </div>
+
                 </div>
                 <div class="block-30 text-right">
                     <a href="#" class="button">Заказать</a>

@@ -11,7 +11,7 @@ $arContext = [
 ]; ?>
 
 <section class="top-block">
-    <div class="container">
+    <div class="container mobile_100">
         <div class="top-block__img-block">
             <img class="top-block__img" src="<?= $arParams["~image"] ?>" alt="">
             <div class="top-block__title"><h1 class="top-block__title-text"><?= $arParams["~title"] ?></h1>

@@ -22,8 +22,8 @@ $mustache = new Mustache_Engine([
     <ul>
         <li><a href="main.php">Главная страница</a></li>
         <li><a href="catalog.php">Каталог</a></li>
-        <li><a href="kitchen.php">Кухни</a></li>
-        <li><a href="catalog-kitchen.php">Детальная кухни</a></li>
+        <li><a href="kitchen.php">Детальная кухни</a></li>
+        <li><a href="catalog-kitchen.php">Кухни</a></li>
     </ul>
 </main>
 </body>
