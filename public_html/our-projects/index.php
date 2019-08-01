@@ -153,8 +153,8 @@ $APPLICATION->SetTitle("Наши проекты");
 		),
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
-			"section" => "#SECTION_CODE#/",
-			"element" => "#SECTION_CODE#/#ELEMENT_CODE#/",
+			"section" => "#SECTION_CODE_PATH#/",
+			"element" => "#SECTION_CODE_PATH#/#ELEMENT_CODE#/",
 			"compare" => "",
 			"smart_filter" => "",
 		)

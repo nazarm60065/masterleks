@@ -1,9 +1,14 @@
 <?
+
+include_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/urlrewrite.php');
+
 CHTTP::SetStatus("404 Not Found");
 @define("ERROR_404", "Y");
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetAdditionalCSS('/local/frontend/local/404/404.css');
 $APPLICATION->SetTitle("Страница не найдена");
+$APPLICATION->SetPageProperty("keywords", "Страница не найдена");
+$APPLICATION->SetPageProperty("description", "Страница не найдена");
 $APPLICATION->SetPageProperty( 'not_show_h1', 'Y' );
 $APPLICATION->SetPageProperty( 'not_show_nav_chain_in_header', 'Y' );
 ?>
