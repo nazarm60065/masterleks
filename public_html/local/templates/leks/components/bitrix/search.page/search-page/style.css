@@ -1,7 +1,6 @@
 div.search-tags-chain a {margin:2px;}
 div.search-tags-chain a.search-tags-link {color:#333333; font-size:90%; text-decoration:none;color:#535353;}
 div.search-tags-cloud a {white-space: normal;}
-
 div.search-advanced { overflow: hidden; margin: 0.5em 0; zoom:1;}
 div.search-advanced-result { float: left; width:70%;}
 div.search-advanced-filter { float: right; }
@@ -10,6 +9,7 @@ div.search-advanced-filter a { outline: none;}
 div.search-item { margin: 0 0 1.5em; padding: 0 0 1.5em; border-bottom: 1px solid;}
 div.search-item h4 { font-size: 140%; font-weight: normal; line-height: 1.2; margin: 1.3em 0 0.4em;}
 div.search-item h4 a { text-decoration:none;}
+div.search-item h4 a:hover { color: #7c7c7c;}
 div.search-item h4 img { border:0px;vertical-align:middle;}
 div.search-item h4 span { vertical-align:middle;text-decoration:underline;}
 div.search-result { margin: 0;}
@@ -20,9 +20,9 @@ div.search-item-rate { float: left; margin: -3px 6px 0 0;}
 div.search-item-tags { float: left; }
 div.search-item-date { float: right;}
 
-div.search-page input.search-query {width: 99%; border: 1px solid; font-size:1.3em;}
+div.search-page input.search-query {width: 99%; border: 1px solid; font-size:1.3em; height: 38px; padding: 0 0 0 10px; margin: 0; font-family: 'Roboto', sans-serif;}
 div.search-page input.search-suggest {width: 99%; border: 1px solid; font-size:1.3em;}
-div.search-page input.search-button { font-size: 1.2em; }
+div.search-page input.search-button { font-size: 1.2em; width: 100px; height: 40px; background: #ff0000; color: #fff; border: none; font-weight: 700; cursor: pointer; padding: 0 6px; font-family: 'Roboto', sans-serif; }
 
 div.search-filter h2 { margin:1em 0 0.5em; border: none;}
 table.search-filter { width: 100%;  margin-top: 0.5em;}

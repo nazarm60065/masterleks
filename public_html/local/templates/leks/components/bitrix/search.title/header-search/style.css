@@ -122,27 +122,6 @@ div.title-search-fader {
 .search-page__empty-result{
 	font-size: 1.78rem;
 }
-.search-button {
-	font-size: 1.2em;
-	width: 100px;
-	height: 40px;
-	background: #ff0000;
-	color: #fff;
-	border: none;
-	font-weight: 700;
-	cursor: pointer;
-	padding: 0 6px;
-	font-family: 'Roboto', sans-serif;
-}
-.search-query {
-	height: 38px;
-	padding: 0 0 0 10px;
-	margin: 0;
-	font-family: 'Roboto', sans-serif;
-}
-.search-item h4	a:hover {
-	color: #7c7c7c;
-}
 @media (min-width: 767px){
 	.search-page__input{
 		width: calc(100% - 129px);
