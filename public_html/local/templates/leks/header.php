@@ -98,12 +98,27 @@ $APPLICATION->ShowPanel();
                 )
             );?>
 
-            <div class="search">
-                <a href="#" class="search__link"><span class="input-i icon-search"></span></a>
-                <div class="input_search_area">
-                    <input type="text">
-                </div>
-            </div>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:search.title",
+                "header-search",
+                Array(
+                    "CATEGORY_0" => array("iblock_leks_catalog", "iblock_leks_content"),
+                    "CATEGORY_0_TITLE" => "",
+                    "CATEGORY_0_iblock_catalog" => array("6"),
+                    "CATEGORY_0_iblock_leks_catalog" => array("all"),
+                    "CATEGORY_0_iblock_leks_content" => array("all"),
+                    "CHECK_DATES" => "N",
+                    "CONTAINER_ID" => "title-search",
+                    "INPUT_ID" => "title-search-input",
+                    "NUM_CATEGORIES" => "1",
+                    "ORDER" => "date",
+                    "PAGE" => "/search/",
+                    "SHOW_INPUT" => "Y",
+                    "SHOW_OTHERS" => "N",
+                    "TOP_COUNT" => "5",
+                    "USE_LANGUAGE_GUESS" => "N"
+                )
+            );?>
         </div>
     </div>
 </header>
