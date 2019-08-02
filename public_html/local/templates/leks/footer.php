@@ -1,47 +1,62 @@
 <? if (!$isMainPage) : ?>
     </div>
-</section>
+    </section>
 <? endif; ?>
 </main>
 <footer>
     <div class="footer-block">
         <div class="container">
             <div class="flex-container">
-                <div class="col-desk-50 d-tablet-mobile-none">
+                <div class="col-desk-25 d-tablet-mobile-none">
                     <div class="footer_title">
                         <a href="/catalog/" class="footer__title-link">Каталог</a>
                     </div>
-                    <div class="flex-container">
-                        <div class="col-desk-50">
-                            <div class="footer__nav">
-                                <ul class="footer__block-nav text-uppercase">
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-desk-50">
-                            <div class="footer__nav">
-                                <ul class="footer__block-nav text-uppercase">
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="footer__nav">
+                        <ul class="footer__block-nav text-uppercase">
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
+                                    на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
+                                    на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
+                                    на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
+                                    на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
+                                    на услугу</a></li>
+                        </ul>
                     </div>
+                </div>
+                <div class="col-desk-25 d-tablet-mobile-none">
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "our-projects",
+                        array(
+                            "ALLOW_MULTI_SELECT" => "N",
+                            "CHILD_MENU_TYPE" => "bottom-projects",
+                            "DELAY" => "N",
+                            "MAX_LEVEL" => "1",
+                            "MENU_CACHE_GET_VARS" => array(),
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_TYPE" => "N",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "ROOT_MENU_TYPE" => "bottom-projects",
+                            "USE_EXT" => "Y",
+                            "COMPONENT_TEMPLATE" => "our-projects",
+                            "TitleText" => "Наши проекты",
+                            "TitleLink" => "/our-projects/",
+                            "TitleAdditionalCssClass" => "",
+                            "HEADLINE" => "Наши проекты",
+                            "HEADLINE_LINK" => "/our-projects/"
+                        ),
+                        false
+                    ); ?>
                 </div>
                 <div class="col-desk-25 d-tablet-mobile-none">
                     <div class="footer_title">
                         <a href="/blog/" class="footer__title-link">Блог</a>
                     </div>
                     <div class="footer__nav">
-                        <?$APPLICATION->IncludeComponent(
+                        <? $APPLICATION->IncludeComponent(
                             "bitrix:news.list",
                             "footer_blog",
                             Array(
@@ -64,7 +79,7 @@
                                 "DISPLAY_PICTURE" => "N",
                                 "DISPLAY_PREVIEW_TEXT" => "N",
                                 "DISPLAY_TOP_PAGER" => "N",
-                                "FIELD_CODE" => array("",""),
+                                "FIELD_CODE" => array("", ""),
                                 "FILTER_NAME" => "",
                                 "HIDE_LINK_WHEN_NO_DETAIL" => "N",
                                 "IBLOCK_ID" => "9",
@@ -83,7 +98,7 @@
                                 "PARENT_SECTION" => "",
                                 "PARENT_SECTION_CODE" => "",
                                 "PREVIEW_TRUNCATE_LEN" => "",
-                                "PROPERTY_CODE" => array("",""),
+                                "PROPERTY_CODE" => array("", ""),
                                 "SET_BROWSER_TITLE" => "N",
                                 "SET_LAST_MODIFIED" => "N",
                                 "SET_META_DESCRIPTION" => "N",
@@ -97,7 +112,7 @@
                                 "SORT_ORDER2" => "ASC",
                                 "STRICT_SECTION_CHECK" => "N"
                             )
-                        );?>
+                        ); ?>
                     </div>
                 </div>
                 <div class="col-desk-25 col-tab-100">
@@ -107,7 +122,7 @@
                     <div class="footer__nav">
                         <ul class="footer__block-nav">
                             <li class="footer__nav-element footer__nav-element_text-big">
-                                <?$APPLICATION->IncludeComponent(
+                                <? $APPLICATION->IncludeComponent(
                                     "bitrix:main.include",
                                     "",
                                     Array(
@@ -116,7 +131,7 @@
                                         "EDIT_TEMPLATE" => "",
                                         "PATH" => "/local/include_areas/address.php"
                                     )
-                                );?>
+                                ); ?>
                             </li>
                             <li class="footer__nav-element footer__nav-element_text-big">
                                 <? $APPLICATION->IncludeComponent(
@@ -149,7 +164,7 @@
         </div>
     </div>
 </footer>
-<?$APPLICATION->IncludeComponent(
+<? $APPLICATION->IncludeComponent(
     "bitrix:menu",
     "top_menu_mobi",
     Array(
@@ -165,6 +180,6 @@
         "ROOT_MENU_TYPE" => "top",
         "USE_EXT" => "Y"
     )
-);?>
+); ?>
 </body>
 </html>
