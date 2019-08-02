@@ -29,8 +29,8 @@ $APPLICATION->SetTitle("Мастер Лекс");
 			0 => "",
 			1 => "",
 		),
-		"SECTION_ID" => "360",
-		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
+		"SECTION_ID" => "364",
+		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE_PATH#/",
 		"SECTION_USER_FIELDS" => array(
 			0 => "",
 			1 => "",
@@ -61,8 +61,8 @@ $APPLICATION->SetTitle("Мастер Лекс");
 			2 => "DETAIL_PICTURE",
 			3 => "",
 		),
-		"SECTION_ID" => "360",
-		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE#/",
+		"SECTION_ID" => "364",
+		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE_PATH#/",
 		"SECTION_USER_FIELDS" => array(
 			0 => "",
 			1 => "",

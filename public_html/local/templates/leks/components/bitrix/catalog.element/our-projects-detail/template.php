@@ -18,6 +18,8 @@ $this->setFrameMode(true);
 
 global $goodName;
 $goodName = $arResult['NAME'];
+
+$countImages = count($arResult['RESIZE_GALLERY_IMAGES']);
 ?>
 
 <div class="flex-container">
@@ -33,10 +35,21 @@ $goodName = $arResult['NAME'];
         <div class="flex-container flex-container_vertical">
             <? foreach ($arResult['RESIZE_GALLERY_IMAGES'] as $key => $arImages) : ?>
                 <div class="block-100">
-                    <div class="block-category block-category_min">
-                        <a class="block-category__link" data-fancybox="gallery" href="<?= $arImages['src'] ?>"><img
-                                    class="block-category__img" src="<?= $arImages['src'] ?>"></a>
-                    </div>
+                    <? if ($key == 1 && $countImages > 2): ?>
+                        <div class="block-category block-category_min">
+                            <a class="block-category__link more-photos" data-fancybox="gallery"
+                               href="<?= $arImages['src'] ?>">
+                                <span class="more-photos_text">Еще <?= $countImages - 2 ?></span>
+                            </a>
+                            <img class="block-category__img" src="<?= $arImages['src'] ?>">
+                        </div>
+                    <? else: ?>
+                        <div class="block-category block-category_min">
+                            <a class="block-category__link" data-fancybox="gallery" href="<?= $arImages['src'] ?>">
+                                <img class="block-category__img" src="<?= $arImages['src'] ?>">
+                            </a>
+                        </div>
+                    <? endif; ?>
                 </div>
             <? endforeach; ?>
         </div>

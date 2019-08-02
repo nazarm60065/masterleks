@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Отследить заказ");
-?>
-
-Text here....
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?><?$APPLICATION->IncludeComponent(
+	"zlabs:rospilorder.form",
+	"",
+Array()
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
