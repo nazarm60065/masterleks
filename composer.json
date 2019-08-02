@@ -5,7 +5,8 @@
     "php": ">=7.0",
     "mustache/mustache": "^2.12",
     "z-labs/deferred-functions": "^1.0",
-    "z-labs/bx-mustache": "^1.0"
+    "z-labs/bx-mustache": "^1.0",
+    "z-labs/rospil-order": "dev-master"
   },
   "autoload": {
     "psr-4": {
@@ -23,6 +24,22 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:z-labs/bx-mustache.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:z-labs/tools-modules.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:z-labs/rospil-order.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:z-labs/orm-tools.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:z-labs/orm-xml.git"
     }
   ]
 }
