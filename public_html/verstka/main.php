@@ -411,31 +411,28 @@
     <div class="footer-block">
         <div class="container">
             <div class="flex-container">
-                <div class="col-desk-50 d-tablet-mobile-none">
-                    <div class="footer_title"><a href="#" class="footer__title-link">Услуги</a></div>
-                    <div class="flex-container">
-                        <div class="col-desk-50">
-                            <div class="footer__nav">
-                                <ul class="footer__block-nav text-uppercase">
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-desk-50">
-                            <div class="footer__nav">
-                                <ul class="footer__block-nav text-uppercase">
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                    <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="col-desk-25 d-tablet-mobile-none">
+                    <div class="footer_title"><a href="#" class="footer__title-link">Каталог</a></div>
+                    <div class="footer__nav">
+                        <ul class="footer__block-nav text-uppercase">
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-desk-25 d-tablet-mobile-none">
+                    <div class="footer_title"><a href="#" class="footer__title-link">Наши проекты</a></div>
+                    <div class="footer__nav">
+                        <ul class="footer__block-nav text-uppercase">
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка на услугу</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-desk-25 d-tablet-mobile-none">
