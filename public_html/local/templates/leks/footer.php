@@ -8,23 +8,25 @@
         <div class="container">
             <div class="flex-container">
                 <div class="col-desk-25 d-tablet-mobile-none">
-                    <div class="footer_title">
-                        <a href="/catalog/" class="footer__title-link">Каталог</a>
-                    </div>
-                    <div class="footer__nav">
-                        <ul class="footer__block-nav text-uppercase">
-                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
-                                    на услугу</a></li>
-                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
-                                    на услугу</a></li>
-                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
-                                    на услугу</a></li>
-                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
-                                    на услугу</a></li>
-                            <li class="footer__nav-element"><a href="#" class="footer__nav-link link-animation">ссылка
-                                    на услугу</a></li>
-                        </ul>
-                    </div>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "catalog",
+                        Array(
+                            "ALLOW_MULTI_SELECT" => "N",
+                            "CHILD_MENU_TYPE" => "bottom-catalog",
+                            "COMPONENT_TEMPLATE" => "catalog",
+                            "DELAY" => "N",
+                            "HEADLINE" => "Каталог",
+                            "HEADLINE_LINK" => "/catalog/",
+                            "MAX_LEVEL" => "1",
+                            "MENU_CACHE_GET_VARS" => array(),
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_TYPE" => "N",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "ROOT_MENU_TYPE" => "bottom-catalog",
+                            "USE_EXT" => "Y"
+                        )
+                    );?>
                 </div>
                 <div class="col-desk-25 d-tablet-mobile-none">
                     <? $APPLICATION->IncludeComponent(
