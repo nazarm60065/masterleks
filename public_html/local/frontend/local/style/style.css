@@ -618,6 +618,54 @@ footer {
     margin-right: 0.6rem;
 }
 
+@media (max-width: 767px) {
+    .track_box,
+    .lead_box{
+        width: 100%;
+    }
+
+    .lead_box {
+        display: block;
+    }
+
+    .lead_box .lead_info,
+    .lead_box .lead_status {
+        width: 100%;
+    }
+
+    .lead_box .lead_info .lead_number {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+    }
+
+    .lead_box .lead_info .dates .date_installation,
+    .lead_box .lead_info .dates .date_change {
+        width: 100%;
+        padding: 0;
+        line-height: 1.5rem;
+    }
+
+    .lead_box .lead_info .dates .date_installation .date,
+    .lead_box .lead_info .dates .date_change .date {
+        margin: 10px 0 0 0;
+    }
+
+    .track_box form {
+        display: block;
+    }
+
+    .track_box form input {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .order-form-error {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
     .container {
         max-width: 720px;
@@ -648,6 +696,34 @@ footer {
 
     }
 
+    .container_section,
+    .lead_box,
+    .track_box {
+        width: 100%;
+    }
+
+    .track_box form input {
+        margin: 0 10px 0 0;
+    }
+
+    .lead_box .lead_info .lead_number {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .lead_box .lead_info .dates .date_installation,
+    .lead_box .lead_info .dates .date_change {
+        line-height: 1.5rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .lead_box .lead_info .dates .date_installation .date,
+    .lead_box .lead_info .dates .date_change .date {
+        font-size: 1rem;
+        margin: 10px 0 0 0;
+    }
 }
 
 @media (min-width: 1200px) {
