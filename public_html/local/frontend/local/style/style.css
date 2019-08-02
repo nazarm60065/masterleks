@@ -490,7 +490,7 @@ footer {
 }
 
 .request_box, .track_box, .lead_box {
-    background-color: #fff9a6;
+    background-color: #F0F0F0;
     padding: 30px 60px;
     box-sizing: border-box;
     margin: 30px auto 30px auto;
@@ -498,13 +498,8 @@ footer {
 }
 
 .h2 {
-    font-size: 1.6rem;
+    font-size: 24px;
     line-height: 2rem;
-    text-transform: uppercase;
-}
-
-.font_bold {
-    font-weight: bold;
 }
 
 .track_box form {
@@ -523,16 +518,22 @@ footer {
     border: none;
 }
 
+.order-form-error {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #EC5858;
+    margin-top: 15px;
+}
+
 .track_box form .button {
-    background-color: #ffed00;
+    background-color: transparent;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 20px;
     cursor: pointer;
     padding: 10px 30px;
     display: inline-block;
-    border: none;
+    border: 1px solid #ff0000;
+    border-radius: 500px;
     color: #000000 !important;
 }
 
@@ -598,7 +599,7 @@ footer {
 }
 .lead_box .lead_status {
     width: 265px;
-    background-color: #bfbebe;
+    background-color: hsla(0, 0%, 90%, 1);
     box-sizing: border-box;
     padding: 30px 15px;
 }
