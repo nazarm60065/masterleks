@@ -282,7 +282,7 @@ header .search .input_search_area input {
 
 @media (max-width: 767px) {
     .full_section .container_section {
-        width: 320px;
+        width: 100%;
         padding: 15px;
     }
 
