@@ -14,8 +14,9 @@ $arContext = [
     <div class="mobile_100">
         <div class="top-block__img-block">
             <img class="top-block__img" src="<?= $arParams["~image"] ?>" alt="">
-            <div class="top-block__title"><h1 class="top-block__title-text"><?= $arParams["~title"] ?></h1>
+            <div class="top-block__title">
                 <div class="container top-block-container">
+                    <h1 class="top-block__title-text"><?= $arParams["~title"] ?></h1>
                     <div class="top-block__block-button">
                         <a href="#order-form-modal" class="top-block__button feedback-form-link">Заказать быстро</a>
                     </div>
