@@ -1,5 +1,6 @@
 
 /*top-block*/
+
 .top-block__img-block{
     height: max-content;
     position: relative;
@@ -700,5 +701,15 @@ ul.slick-dots li.slick-active button:before {
         order: 2;
     }
 
+    .top-block-container {
+        max-width: none;
+        padding: 0;
+    }
 
+    .top-block {
+        max-width: 1140px;
+        margin: auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
 }
