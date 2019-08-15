@@ -436,17 +436,15 @@ footer{
     border: 1px solid #ff0000;
     border-radius: 500px;
     color: #000000 !important;
+    outline: none;
 }
 
 .lead_box {
-    display: flex;
-    justify-content: space-between;
     padding: 0;
     width: 1000px;
 }
 
 .lead_box .lead_info {
-    width: calc(100% - 265px);
     box-sizing: border-box;
     padding: 30px;
 }
@@ -499,7 +497,6 @@ footer{
     box-sizing: border-box;
 }
 .lead_box .lead_status {
-    width: 265px;
     background-color: hsla(0, 0%, 90%, 1);
     box-sizing: border-box;
     padding: 30px 15px;
@@ -518,7 +515,21 @@ footer{
 .lead_box .lead_status .status_item span {
     margin-right: 0.6rem;
 }
-
+.lead_box .note p{
+    background-color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    text-align: left;
+}
+.lead_box .note  .note_status{
+    background: #bfbebe;
+}
+.lead_box .lead_info .order {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
 @media (max-width: 767px) {
     .track_box,
     .lead_box{

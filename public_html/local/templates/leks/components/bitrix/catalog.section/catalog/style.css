@@ -74,7 +74,9 @@
 	/*1*/
 	.product-item-list-col-1   > .col-xs-12 > .row > .col-xs-12:nth-child(1n){clear: both}
 }
-
+.catalog-section{
+	margin-bottom: 50px;
+}
 .catalog-section-header{
 	font-size:14px;
 	font-weight: bold;
