@@ -17,7 +17,8 @@ $this->setFrameMode(true); ?>
         <div class="block-25">
             <div class="block-category" style="background-image: url('<?= $arSection['RESIZE_IMAGE']['src'] ?>')">
                 <div class="blackout"></div>
-                <a href="<?= $arSection['SECTION_PAGE_URL'] ?>" class="link-absolute"></a>
+                <a href="<?= $arSection['UF_CUSTOM_URL'] ?: $arSection['SECTION_PAGE_URL'] ?>"
+                   class="link-absolute"></a>
                 <div class="category__block-title category__title_align-center">
                     <span class="category__title category__title_small-text"><?= $arSection['NAME'] ?></span>
                 </div>
