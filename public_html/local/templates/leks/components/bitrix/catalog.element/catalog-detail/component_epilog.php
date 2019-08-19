@@ -16,7 +16,8 @@ $APPLICATION->IncludeComponent(
 	"catalog_modal_form", 
 	array(
 		"email_to" => array(
-			0 => "f1gnerokk@gmail.com",
+			0 => "e.ivankin@z-labs.ru",
+			1 => "",
 		),
 		"event_message_id" => array(
 			0 => "10",
@@ -57,13 +58,20 @@ $APPLICATION->IncludeComponent(
 		"is_popup" => "Y",
 		"link_to_form_text" => "",
 		"name" => "Форма обратной связи со страницы товара",
-		"num_fields" => "4",
+		"num_fields" => "5",
 		"sub_title" => "",
 		"submit_text" => "Отправить",
 		"success_message" => "Скоро с вами свяжется наш менеджер.",
 		"success_message_title" => "Ваша заявка принята.",
 		"title" => "Быстрый заказ",
-		"COMPONENT_TEMPLATE" => "catalog_modal_form"
+		"COMPONENT_TEMPLATE" => "catalog_modal_form",
+		"field_4_type" => "ZLabs\\FeedbackForm\\Field\\FileField",
+		"field_4_title" => "Прикрепить файл",
+		"field_4_code" => "ATTACH",
+		"field_4_required" => "N",
+		"field_4_placeholder" => "Прикрепить файл",
+		"field_4_note" => "Прикрепить файл",
+		"field_4_multiple" => "N"
 	),
 	false
 );

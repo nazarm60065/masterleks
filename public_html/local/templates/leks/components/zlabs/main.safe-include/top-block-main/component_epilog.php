@@ -7,7 +7,8 @@ $APPLICATION->IncludeComponent(
 	"modal_form", 
 	array(
 		"email_to" => array(
-			0 => "f1gnerokk@gmail.com",
+			0 => "e.ivankin@z-labs.ru",
+			1 => "",
 		),
 		"event_message_id" => array(
 			0 => "10",
@@ -33,13 +34,13 @@ $APPLICATION->IncludeComponent(
 		"field_2_required" => "N",
 		"field_2_title" => "Комментарий",
 		"field_2_type" => "ZLabs\\FeedbackForm\\Field\\TextAreaField",
-		"field_3_code" => "good",
+		"field_3_code" => "ATTACH",
 		"field_3_mask" => "simple",
-		"field_3_note" => "",
-		"field_3_placeholder" => "",
+		"field_3_note" => "Прикрепить файл",
+		"field_3_placeholder" => "Прикрепить файл",
 		"field_3_required" => "N",
-		"field_3_title" => "Товар",
-		"field_3_type" => "ZLabs\\FeedbackForm\\Field\\TextField",
+		"field_3_title" => "Прикрепить файл",
+		"field_3_type" => "ZLabs\\FeedbackForm\\Field\\FileField",
 		"field_4_code" => "text",
 		"field_4_mask" => "simple",
 		"field_4_note" => "",
@@ -54,13 +55,14 @@ $APPLICATION->IncludeComponent(
 		"is_popup" => "Y",
 		"link_to_form_text" => "",
 		"name" => "Форма обратной связи с главной страницы",
-		"num_fields" => "3",
+		"num_fields" => "4",
 		"sub_title" => "",
 		"submit_text" => "Отправить",
 		"success_message" => "Скоро с вами свяжется наш менеджер.",
 		"success_message_title" => "Ваша заявка принята.",
 		"title" => "Быстрый заказ",
-		"COMPONENT_TEMPLATE" => "modal_form"
+		"COMPONENT_TEMPLATE" => "modal_form",
+		"field_3_multiple" => "N"
 	),
 	false
 );

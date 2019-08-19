@@ -64,7 +64,7 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"SECTION_ID" => "364",
 		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE_PATH#/",
 		"SECTION_USER_FIELDS" => array(
-			0 => "",
+			0 => "UF_COST",
 			1 => "",
 		),
 		"SHOW_PARENT_NAME" => "Y",
