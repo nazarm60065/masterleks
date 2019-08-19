@@ -19,7 +19,7 @@ $this->setFrameMode(true); ?>
                 <div class="category-block">
                     <a href="<?= $arSection['SECTION_PAGE_URL'] ?>" class="link-absolute"></a>
                     <div class="category__title"><?= $arSection['NAME'] ?></div>
-                    <div class="category__block-price"><span class="category__price">от 123456 руб.</span></div>
+                    <? if($arSection['UF_COST']):?><div class="category__block-price"><span class="category__price">от <?=$arSection['UF_COST']?></span></div><? endif;?>
                     <div class="category__block-img">
                         <img src="<?= $arSection['RESIZE_DETAIL_IMAGE']['src'] ?>" alt="<?= $arSection['NAME'] ?>"
                              class="category_img">

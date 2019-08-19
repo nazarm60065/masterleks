@@ -6,6 +6,7 @@ $needResizePicture = $needObtainPrices = $arResult['SECTIONS'] > 0;
 
 if ($needResizePicture) {
     foreach ($arResult['SECTIONS'] as $key => &$arSection) {
+        //echo "<pre>"; print_r($arResult['SECTIONS']); echo "</pre>";
         $arResImage = CFile::ResizeImageGet(
                 $arSection['PICTURE'],
                 array('width' => 240, 'height' => 255),
