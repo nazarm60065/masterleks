@@ -473,7 +473,8 @@ footer{
     align-items: flex-end;
 }
 .lead_box .lead_info .dates .date_installation {
-    padding-right: 15px;
+    margin: auto;
+    text-align: center;
 }
 
 .lead_box .lead_info .dates .date_installation, .lead_box .lead_info .dates .date_change {
