@@ -14,7 +14,7 @@
     }
   },
   "extra": {
-    "bitrix-dir": "public_html/local"
+    "bitrix-dir": "public_html/bitrix"
   },
   "repositories": [
     {
