@@ -226,7 +226,13 @@ header .search .input_search_area input {
     header menu {
         display: none; }
     header .search {
-        display: none; }
+        margin-right: 0;
+        margin-top: 6px;
+    }
+    header .search .input_search_area.show {
+        width: 280px;
+        padding: 20px 10px;
+    }
     .mobile_menu .menu_sidebar{
         width: 100%;
     }
@@ -238,7 +244,12 @@ header .search .input_search_area input {
     header menu {
         display: none; }
     header .search {
-        display: none; }
+        margin-right: 0;
+    }
+    header .search .input_search_area.show {
+        width: 675px;
+        padding: 20px 10px;
+    }
     .mobile_menu .menu_sidebar .menu-list-item{
         text-align: left;
     }
