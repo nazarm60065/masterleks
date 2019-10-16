@@ -103,9 +103,11 @@
     height: max-content;
     margin: auto;
     width: max-content;
+    max-width: 100%;
+    text-align: center;
     left: 0;
     right: 0;
-    font-size: 40px;
+    font-size: 37px;
     color: #fff;
     font-family: "Playfair Display";
     font-weight: 900;
