@@ -21,16 +21,26 @@ if ($needResizeDetailPicture) {
 }
 
 if ($needResizeGalleryPictures) {
+    if (count($arResult['PROPERTIES']['GALLERY']['VALUE']) > 1) {
+        foreach ($arResult['DISPLAY_PROPERTIES']['GALLERY']['FILE_VALUE'] as $key => &$arImage) {
+            $arResImages = CFile::ResizeImageGet(
+                $arImage,
+                array("width" => 900, "height" => 900),
+                BX_RESIZE_IMAGE_PROPORTIONAL,
+                true
+            );
 
-    foreach ($arResult['DISPLAY_PROPERTIES']['GALLERY']['FILE_VALUE'] as $key => &$arImage) {
-        $arResImages = CFile::ResizeImageGet(
-            $arImage,
+            $arResult['RESIZE_GALLERY_IMAGES'][] = $arResImages;
+        }
+    }
+    else{
+        $arResult['RESIZE_GALLERY_IMAGES'][]=  $arResImages = CFile::ResizeImageGet(
+            $arResult['DISPLAY_PROPERTIES']['GALLERY']['FILE_VALUE'],
             array("width" => 900, "height" => 900),
             BX_RESIZE_IMAGE_PROPORTIONAL,
             true
         );
-
-        $arResult['RESIZE_GALLERY_IMAGES'][] = $arResImages;
     }
+
     unset($arImage);
 }
