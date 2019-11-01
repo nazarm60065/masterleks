@@ -16,8 +16,9 @@ $APPLICATION->IncludeComponent(
 	"catalog_modal_form", 
 	array(
 		"email_to" => array(
-			0 => "e.ivankin@z-labs.ru",
-			1 => "",
+			0 => "dimaline@mail.ru",
+			1 => "t.k.rp@mail.ru",
+			2 => "tanya.rychkova.1995@mail.ru",
 		),
 		"event_message_id" => array(
 			0 => "10",

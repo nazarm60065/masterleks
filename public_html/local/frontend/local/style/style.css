@@ -358,7 +358,7 @@ footer{
 .footer__nav-link:hover{
     color: #7c7c7c;
 }
-.col-desk-25{
+.col-desk-20{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -658,7 +658,7 @@ footer{
         width: 50%;
         padding: 0 15px;
     }
-    .col-desk-25{
-        width: 25%;
+    .col-desk-20{
+        width: 20%;
     }
 }
