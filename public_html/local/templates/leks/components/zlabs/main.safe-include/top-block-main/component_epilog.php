@@ -7,8 +7,10 @@ $APPLICATION->IncludeComponent(
 	"modal_form", 
 	array(
 		"email_to" => array(
-			0 => "e.ivankin@z-labs.ru",
-			1 => "",
+			0 => "dimaline@mail.ru",
+			1 => "t.k.rp@mail.ru",
+			2 => "tanya.rychkova.1995@mail.ru",
+			3 => "",
 		),
 		"event_message_id" => array(
 			0 => "10",
@@ -50,6 +52,7 @@ $APPLICATION->IncludeComponent(
 		"field_4_type" => "ZLabs\\FeedbackForm\\Field\\TextField",
 		"footnote_text" => "Поля отмеченные * обязательны для заполнения",
 		"goals" => array(
+			0 => "fast_order_ finish",
 		),
 		"id" => "order-form-modal",
 		"is_popup" => "Y",

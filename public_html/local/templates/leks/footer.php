@@ -7,7 +7,7 @@
     <div class="footer-block">
         <div class="container">
             <div class="flex-container">
-                <div class="col-desk-25 d-tablet-mobile-none">
+                <div class="col-desk-20 d-tablet-mobile-none">
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:menu",
                         "catalog",
@@ -28,7 +28,7 @@
                         )
                     );?>
                 </div>
-                <div class="col-desk-25 d-tablet-mobile-none">
+                <div class="col-desk-20 d-tablet-mobile-none">
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:menu",
                         "our-projects",
@@ -53,7 +53,7 @@
                         false
                     ); ?>
                 </div>
-                <div class="col-desk-25 d-tablet-mobile-none">
+                <div class="col-desk-20 d-tablet-mobile-none">
                     <div class="footer_title">
                         <a href="/blog/" class="footer__title-link">Блог</a>
                     </div>
@@ -117,7 +117,35 @@
                         ); ?>
                     </div>
                 </div>
-                <div class="col-desk-25 col-tab-100">
+
+                <div class="col-desk-20 d-tablet-mobile-none">
+                    <? $APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"our-projects", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "bottom-projects",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "company",
+		"USE_EXT" => "Y",
+		"COMPONENT_TEMPLATE" => "our-projects",
+		"TitleText" => "Компания",
+		"TitleLink" => "/company/",
+		"TitleAdditionalCssClass" => "",
+		"HEADLINE" => "Компания",
+		"HEADLINE_LINK" => "/company/"
+	),
+	false
+); ?>
+                </div>
+
+                <div class="col-desk-20 col-tab-100">
                     <div class="footer_title d-tablet-mobile-none">
                         <a href="/contacts/" class="footer__title-link">Контакты</a>
                     </div>
@@ -183,5 +211,23 @@
         "USE_EXT" => "Y"
     )
 ); ?>
+
+<script src="//code.jivosite.com/widget.js" data-jv-id="6086PcAthy" async></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(45957462, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45957462" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 </body>
 </html>

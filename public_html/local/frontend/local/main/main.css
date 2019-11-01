@@ -87,13 +87,13 @@
     background-size: cover;
 }
 .slick-slider__blackout{
-    background: #00000075;
+    background: #00000030;
     width: 100%;
     height: 100%;
     transition: 0.3s;
 }
 .slick-slide:hover .slick-slider__blackout{
-    background: #00000030;
+    background: #00000075;
     transition: 0.3s;
 }
 .slider-slick__block-text{
@@ -175,7 +175,7 @@ ul.slick-dots li.slick-active button:before {
     position: relative;
 }
 .category-block{
-    background: #000;
+    background: #c70000;
     padding: 50px 0 40px 0;
     position: relative;
 }
