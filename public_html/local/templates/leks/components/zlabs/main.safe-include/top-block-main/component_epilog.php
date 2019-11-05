@@ -52,8 +52,7 @@ $APPLICATION->IncludeComponent(
 		"field_4_type" => "ZLabs\\FeedbackForm\\Field\\TextField",
 		"footnote_text" => "Поля отмеченные * обязательны для заполнения",
 		"goals" => array(
-			0 => "fast_order_finish",
-			1 => "",
+			0 => "fast_order_ finish",
 		),
 		"id" => "order-form-modal",
 		"is_popup" => "Y",

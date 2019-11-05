@@ -19,7 +19,6 @@ $APPLICATION->IncludeComponent(
 			0 => "dimaline@mail.ru",
 			1 => "t.k.rp@mail.ru",
 			2 => "tanya.rychkova.1995@mail.ru",
-			3 => "",
 		),
 		"event_message_id" => array(
 			0 => "10",
@@ -55,8 +54,6 @@ $APPLICATION->IncludeComponent(
 		"field_3_value" => $goodName,
 		"footnote_text" => "Поля отмеченные * обязательны для заполнения",
 		"goals" => array(
-			0 => "order_finish",
-			1 => "",
 		),
 		"id" => "catalog_modal_form",
 		"is_popup" => "Y",
