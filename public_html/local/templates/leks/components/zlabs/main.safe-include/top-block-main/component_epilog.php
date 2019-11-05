@@ -53,6 +53,7 @@ $APPLICATION->IncludeComponent(
 		"footnote_text" => "Поля отмеченные * обязательны для заполнения",
 		"goals" => array(
 			0 => "fast_order_ finish",
+			1 => "",
 		),
 		"id" => "order-form-modal",
 		"is_popup" => "Y",

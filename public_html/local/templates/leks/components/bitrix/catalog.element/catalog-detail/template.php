@@ -75,6 +75,6 @@ $countImages = count($arResult['RESIZE_GALLERY_IMAGES']);
         </div>
     </div>
     <div class="block-30 text-right">
-        <a href="#catalog_modal_form" class="button feedback-form-link">Заказать</a>
+        <a href="#catalog_modal_form" class="button feedback-form-link" data-yandex-goals="[&quot;order_start&quot;]">Заказать</a>
     </div>
 </div>

@@ -27,6 +27,7 @@ echo "<html lang=\"{$lang}\">";
     $APPLICATION->SetAdditionalCSS('/local/frontend/local/breadcrumbs/style.css');
 
     $APPLICATION->AddHeadScript('/local/assets/vendor/jquery.js');
+    $APPLICATION->AddHeadScript('/local/assets/local/common/common.js');
     $APPLICATION->AddHeadScript('/local/assets/vendor/fancybox/jquery.fancybox.js');
     $APPLICATION->AddHeadScript('/local/assets/vendor/form/jquery.form.min.js');
     $APPLICATION->AddHeadScript('/local/assets/vendor/inputmask/jquery.inputmask.bundle.min.js');
