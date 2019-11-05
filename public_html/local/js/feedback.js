@@ -79,12 +79,12 @@
                             form.clearForm();
                             _this.find(data.submitButton).prop('disabled', false).html(data.submitHtml);
 
-                            if (yandexMetricsInstance) {
-                                yandexMetricsInstance.reachGoals(responseText.data.ya_goals);
+                            if (window.yandexMetricsInstance) {
+                                window.yandexMetricsInstance.reachGoals(responseText.data.ya_goals);
                             }
 
-                            if (GoogleMetricsInstance) {
-                                GoogleMetricsInstance.reachGoals(responseText.data.ga_goals);
+                            if (window.GoogleMetricsInstance) {
+                                window.GoogleMetricsInstance.reachGoals(responseText.data.ga_goals);
                             }
                         }
                         else {

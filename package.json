@@ -15,7 +15,7 @@
     "html-webpack-plugin": "^2.26.0",
     "loglevel": "^1.4.1",
     "mini-css-extract-plugin": "^0.4.1",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^4.0.3",
     "postcss-loader": "^2.1.6",
     "resolve-url-loader": "^3.0.0",
