@@ -43,7 +43,7 @@ $APPLICATION->SetAdditionalCSS('/local/frontend/local/contacts/contacts.css');
 	)
 );?>
 		</div>
- <span class="h2 font_bold">Бесплатная горячая линия Leks</span>
+ <span class="h2 font_bold">Бесплатная горячая линия Leks</span> <br>
 		<div class="hotline-phone">
 			 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
@@ -53,6 +53,14 @@ $APPLICATION->SetAdditionalCSS('/local/frontend/local/contacts/contacts.css');
 		"AREA_FILE_SUFFIX" => "inc",
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "/local/include_areas/phone.php"
+	)
+);?><?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => ""
 	)
 );?>
 		</div>
@@ -70,4 +78,4 @@ $APPLICATION->SetAdditionalCSS('/local/frontend/local/contacts/contacts.css');
 );?>
 	</div>
 </div>
-<br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+ <br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
