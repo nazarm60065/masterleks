@@ -13,7 +13,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00000075;
+    background: #00000030;
+    transition: 0.3s;
 }
 
 .category__block-title {
@@ -35,9 +36,8 @@
     top: 0;
     right: 0;
 }
-.block-category:hover .blackout, .block-category:hover .category__block-title{
-    opacity: 0;
-    transition: 0.3s;
+.block-category:hover .blackout {
+    background: #00000075;
 }
 
 .category__title_small-text {
