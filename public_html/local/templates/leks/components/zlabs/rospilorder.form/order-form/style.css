@@ -1,0 +1,78 @@
+.order-form-error {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #EC5858;
+    margin-top: 15px;
+}
+
+.order-form__control-container {
+    position: relative;
+}
+
+.order-form__link {
+    top: 50%;
+    position: absolute;
+    right: 15px;
+    transform: translateY(-50%);
+    border-bottom: 1px dashed;
+    line-height: 1.1;
+    font-size: 12px;
+}
+
+.lead_box .note p span:first-child{
+    margin-right: 15px;
+}
+
+.sberbank-pay {
+    text-align: center;
+}
+
+.sberbank-pay__link {
+    outline: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.78rem;
+    cursor: pointer;
+    padding: 10px 30px;
+    display: inline-block;
+    border: none;
+    transition: 0.2s;
+}
+
+.sberbank-pay__link:hover {
+    background-color: #c70000;
+    color: #fff;
+}
+
+.order-status {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: solid 1px #000;
+}
+
+.order-status.success {
+    color: #73ca01;
+    border-color: #73ca01;
+}
+
+.order-status.error {
+    color: #ff0d07;
+    border-color: #ff0d07;
+}
+
+.order-payment-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-payment-info__item {
+    font-size: 16px;
+    margin-top: 0;
+}
