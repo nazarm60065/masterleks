@@ -20,7 +20,7 @@ final class Settings
 
     private function __construct()
     {
-        $this->settings = collect(Configuration::getInstance()->get('sberbank'));
+        $this->settings = collect(Configuration::getInstance()->get('sberbank_leks'));
     }
 
     private function __clone()
