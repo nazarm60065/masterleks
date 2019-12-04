@@ -6,10 +6,11 @@
     "mustache/mustache": "^2.12",
     "z-labs/deferred-functions": "^1.0",
     "z-labs/bx-mustache": "^1.0",
-    "z-labs/rospil-order": "dev-master",
     "notamedia/console-jedi": "^1.2",
     "arrilot/bitrix-migrations": "^2.5",
-    "arrilot/bitrix-iblock-helper": "^0.3.4"
+    "arrilot/bitrix-iblock-helper": "^0.3.4",
+    "arrilot/bitrix-models": "^0.7.21",
+    "z-labs/orm-tools": "^1.1"
   },
   "autoload": {
     "psr-4": {
