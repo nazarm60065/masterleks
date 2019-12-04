@@ -48,9 +48,9 @@
                     {{#orderStatusExists}}
                         <div class="order-status {{orderStatusClass}}">
                             {{orderStatusText}}
-                            {{^paymentSuccess}}
-                                <a href="tel:{{companyTelephoneNumber}}">+7 914 538  20 87</a>
-                            {{/paymentSuccess}}
+                            {{#companyTelephoneNumber}}
+                                <a href="tel:{{companyTelephoneNumber}}">+7 914 538 20 87</a>
+                            {{/companyTelephoneNumber}}
                         </div>
                     {{/orderStatusExists}}
                     {{#showOrderPrice}}
@@ -61,7 +61,8 @@
                     {{/showOrderPrice}}
                     {{#showPaymentButton}}
                         <div class="sberbank-pay">
-                            <a href="/create-order.php?orderNumber={{order}}" class="sberbank-pay__link">Оплатить {{sum}} руб.</a>
+                            <a href="/create-order.php?orderNumber={{order}}"
+                            class="sberbank-pay__link">Оплатить {{sum}} руб.</a>
                         </div>
                     {{/showPaymentButton}}
                     {{^lines.isEmpty}}
