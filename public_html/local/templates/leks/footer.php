@@ -212,7 +212,7 @@
     )
 ); ?>
 
-<script src="//code.jivosite.com/widget.js" data-jv-id="6086PcAthy" async></script>
+<script src="//code-ya.jivosite.com/widget/0dzn8EV078" async></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
