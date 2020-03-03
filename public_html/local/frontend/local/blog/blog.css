@@ -60,13 +60,27 @@
     font-size: 1.2rem;
     line-height: 2rem;
     text-align: left; }
-.blog_detail img {
+.blog_detail > img {
     max-width: 300px;
     max-height: 200px;
     float: left;
     margin: 0 20px 20px 0; }
+
+.blog_detail__image-container {
+    margin: 20px 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blog-detail__image {
+    max-width: 100%;
+    max-height: 800px;
+}
 @media (max-width: 767px) {
-    .blog_detail img {
+    .blog_detail > img {
         max-width: 100%;
         margin: 0 0 20px 0; } }
 .blog_detail p {
