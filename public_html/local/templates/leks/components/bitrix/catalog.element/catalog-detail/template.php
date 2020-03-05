@@ -26,7 +26,7 @@ $countImages = count($arResult['RESIZE_GALLERY_IMAGES']);
         <div class="block-category">
             <a class="block-category__link" data-fancybox="gallery"
                href="<?= $arResult['RESIZE_DETAIL_PICTURE']['src'] ?>"><img
-                        class="block-category__img" src="<?= $arResult['RESIZE_DETAIL_PICTURE']['src'] ?>"></a>
+                        class="block-category__img-detail" src="<?= $arResult['RESIZE_DETAIL_PICTURE']['src'] ?>"></a>
         </div>
     </div>
 
