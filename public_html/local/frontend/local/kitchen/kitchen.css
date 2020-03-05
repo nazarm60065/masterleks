@@ -40,12 +40,14 @@
     left: 60px;
 }
 .block-30 .flex-container{
-    align-content: normal;
+    align-content: flex-start;
 }
 .block-50 {
     margin-bottom: 60px;
 }
 .block-100{
+    margin-bottom: 15px;
+    height: 230px;
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
