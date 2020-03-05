@@ -13,7 +13,7 @@ if ($needResizeDetailPicture) {
     $arResImages = CFile::ResizeImageGet(
         $arResult['DETAIL_PICTURE'],
         array("width" => 910, "height" => 600),
-        BX_RESIZE_IMAGE_EXACT,
+        BX_RESIZE_IMAGE_PROPORTIONAL,
         true
     );
 
