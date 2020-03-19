@@ -31,7 +31,7 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"FIELD_CODE" => array("DETAIL_PICTURE",""),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "11",
+		"IBLOCK_ID" => "10",
 		"IBLOCK_TYPE" => "leks_content",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "N",
