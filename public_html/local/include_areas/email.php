@@ -1,7 +1,2 @@
-<? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die(); ?>
-
-<a href="mailto:sales@masterleks.ru" class="link link_email"
-   title="Электронная почта отдела продаж">sales@masterleks.ru</a>
-<br>
-<a href="mailto:Brand@masterleks.ru" class="link link_email"
-   title="Электронная почта отдела маркетинга">Brand@masterleks.ru</a>
+<? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die(); ?>&nbsp;<a href="mailto:546767@masterleks.ru" target="_blank">546767@masterleks.ru</a>&nbsp;<br>
+ <br>
