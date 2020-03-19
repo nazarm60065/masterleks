@@ -43,8 +43,8 @@ class MainSliderFactory implements FactoryMethodInterface
     {
         $mobileImage = \CFile::ResizeImageGet(
             $this->arBxItem['DETAIL_PICTURE'],
-            array("width" => 768, "height" => 400),
-            BX_RESIZE_IMAGE_PROPORTIONAL
+            array("width" => 450, "height" => 500),
+            BX_RESIZE_IMAGE_EXACT
         );
 
         $image = \CFile::ResizeImageGet(
