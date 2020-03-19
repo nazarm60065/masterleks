@@ -41,12 +41,6 @@
   color: #ffffff
   span
     background-color: #ff0000
-  a
-    color: #ffffff
-    display: none
-    &:active
-      color: #ffffff
-      outline: none
 
 .main-slider__item-link
   font-weight: bold
@@ -135,25 +129,14 @@
     &__item-title
       margin-bottom: 15px
 
-  .main-slider__item-text
-    padding: 95px 15px 0 15px
-
-  .main-slider__item-image_desktop
-    display: none !important
-
-  .main-slider__item-image_mobile
-    display: block !important
-
   .main-slider__item-title
     font-size: 25px
-    a
-      display: block
-
-  .main-slider__item-title > span
-    display: none
 
   .main-slider__item-link
-    display: none
+    padding: 5px 10px
+
+  .main-slider__item-text
+    padding: 95px 15px 0 15px
 
   .main-slider__dots
     right: 0
@@ -162,10 +145,23 @@
     flex-direction: row
     height: 15px
     top: auto
-    bottom: 5px
+    bottom: 15px
     li
       margin-right: 5px
       button
         width: 15px
         height: 15px
         border: 2px solid #ffffff
+
++mq(mobile-big, max)
+  .main-slider__item-text
+    padding: 154px 15px 0 15px
+
+  .main-slider__item-image_desktop
+    display: none !important
+
+  .main-slider__item-image_mobile
+    display: block !important
+
+  .main-slider__dots
+    bottom: 15px
