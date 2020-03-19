@@ -13,6 +13,7 @@ $mustache = new Mustache_Engine([
     <link rel="stylesheet" type="text/css" href="/local/icons/icomoon/style.css">
     <link rel="stylesheet" href="/local/frontend/local/style/style.css">
     <link rel="stylesheet" href="/local/frontend/local/main/main.css">
+    <link rel="stylesheet" href="/local/assets/local/main/main.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900i|Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/local/js/jquery.slick/slick.css"/>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
