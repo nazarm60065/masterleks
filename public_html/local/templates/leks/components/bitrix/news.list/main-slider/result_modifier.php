@@ -1,6 +1,8 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+<?
 
 use ZLabs\Components\MainSlider\MainSliderFactory;
+
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 $items = collect($arResult['ITEMS']);
 
