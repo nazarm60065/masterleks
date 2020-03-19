@@ -61,7 +61,8 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N"
 	)
-);?> <?$APPLICATION->IncludeComponent(
+);?>
+<?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",
 	"section-main",
 	Array(

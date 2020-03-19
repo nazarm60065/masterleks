@@ -73,6 +73,7 @@ class MainSliderFactory implements FactoryMethodInterface
         $this->instance->link = new Link();
         $this->instance->link->href = $this->arBxItem['DISPLAY_PROPERTIES']['BUTTON_LINK']['VALUE'];
         $this->instance->link->text = $this->arBxItem['DISPLAY_PROPERTIES']['SLIDER_TEXT_BTN']['VALUE'];
+        $this->instance->link->additionalCssClass = $this->arBxItem['PROPERTIES']['IS_MODAL']['VALUE'] == "Y" ? 'feedback-form-link' : '';
     }
 }
 ?>
