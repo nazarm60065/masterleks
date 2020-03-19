@@ -1,0 +1,16 @@
+<div class="main-slider">
+    {{# values }}
+    <div class="main-slider__item">
+        <img class="main-slider__item-image main-slider__item-image_desktop" src="{{desktopImage.src}}" title="{{desktopImage.title}}">
+        <img class="main-slider__item-image main-slider__item-image_mobile" src="{{mobileImage.src}}" title="{{mobileImage.title}}">
+            <div class="main-slider__item-text">
+                {{# title }}
+                <h2 class="main-slider__item-title"><span>{{{ title }}}</span></h2>
+                {{/ title }}
+                {{#link.href}}
+                <a href="{{ link.href }}" class="main-slider__item-link" title="{{ link.title }}">{{{ link.text }}}</a>
+                {{/link.href}}
+            </div>
+    </div>
+    {{/values}}
+</div>

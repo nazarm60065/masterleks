@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/local/frontend/local/catalog-kitchen/catalog-kitchen.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900i|Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/local/js/jquery.slick/slick.css"/>
-
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png" />

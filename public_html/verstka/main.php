@@ -1,3 +1,10 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/../vendor/autoload.php';
+
+$mustache = new Mustache_Engine([
+    'loader' => new Mustache_Loader_FilesystemLoader($_SERVER['DOCUMENT_ROOT'] . '/local/assets/mustache/')
+]);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,15 +36,11 @@
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-
-
-
-
     <script type="text/javascript" src="/local/js/jquery2/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/local/js/jquery.slick/slick.min.js"></script>
     <script type="text/javascript" src="/local/frontend/local/main/main.js"></script>
     <script type="text/javascript" src="/local/frontend/local/style/style.js"></script>
-
+    <script type="text/javascript" src="/local/assets/local/main/main.js" defer></script>
 </head>
 <body>
 <header>
@@ -69,15 +72,13 @@
 <main class="main ">
 <!--top-block-->
     <div class="main-blackout "></div>
-    <section class="top-block">
-        <div class="top-block__img-block">
-            <img class="top-block__img" src="/local/images/main/pic_1.jpg" alt="">
-            <div class="top-block__title"><h1 class="top-block__title-text">Как ты<br>захочешь</h1>
-                <div class="top-block__block-button">
-                <a href="#" class="top-block__button">Заказать быстро</a>
-            </div></div>
-
-        </div>
+    <section class="main-slider-section">
+            <?php
+                echo $mustache->render(
+                    'main-slider',
+                    include $_SERVER['DOCUMENT_ROOT'] . '/verstka/context/main/main-slider.php'
+                );
+            ?>
     </section>
     <section class="slider-1 slider section">
         <div class="container">
