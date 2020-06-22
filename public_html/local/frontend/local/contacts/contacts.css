@@ -35,3 +35,10 @@
 .link:hover {
     color: #7c7c7c;
 }
+
+@media (max-width: 768px) {
+    .left-part,
+    .right-part{
+        width: 100%;
+    }
+}
