@@ -14,39 +14,63 @@ if (!Loader::includeModule('zlabs.rospilorder')) {
 
 $request = Application::getInstance()->getContext()->getRequest();
 $orderNumber = (int)$request->getQuery("orderNumber");
+$paymentSum = (int)$request->getQuery("sum");
 
 $status = OrderStatus::query()
     ->filter(['ORDER_NUMBER' => $orderNumber])
     ->order('DATE', 'DESC')
     ->getList()
     ->first();
-
 if ($status->count() > 0) {
     $orderSum = (int)($status["LEFT_TO_PAY"]);
-    $parOrderSum = $orderSum * 100;
 
-    $order = (new OrderManagerByNumber($orderNumber, $parOrderSum, "Оплата заказа №" . $orderNumber))->createOrderManager();
+    if ($orderSum < $paymentSum) {
+        echo "Ошибка. Превышена стоимость заказа";
+        return;
+    }
+
+    $parOrderSum = $paymentSum * 100;
+
+    $lastPaymentNumber = OrderStatus::query()
+        ->filter(['ORDER_NUMBER' => $orderNumber])
+        ->order('PAY_ID', 'DESC')
+        ->getList()
+        ->first()
+        ->getFields()['PAY_ID'];
+
+    $newOrderNumber = ($lastPaymentNumber && $lastPaymentNumber>0) ? $lastPaymentNumber  : $orderNumber;
+
+    if (strripos($newOrderNumber, "_") == false) {
+        $parOrderNumber = $newOrderNumber . "_1";
+    } else {
+        $prefix = stristr($newOrderNumber, '_');
+        $paymentId = str_replace('_', '', $prefix) + 1;
+        $parOrderNumber = str_replace($prefix, '', $newOrderNumber) . "_" . $paymentId;
+    }
+
+    $order = (new OrderManagerByNumber($parOrderNumber, $parOrderSum, "Оплата заказа №" . $orderNumber))->createOrderManager();
     $orderStatus = $order->getStatus();
-
     if ($order->isPaid()) {
         $successUrl = $order->getConfig()->getPaymentResultUrl($order->getNumber(), true);
         LocalRedirect($successUrl);
-    }
-    else if ($order->isNotPaid()) {
+    } else if ($order->isNotPaid() || $order->isAutorizePay()) {
         $paymentLink = OrderLink::getPaymentLink($order->getNumber());
         if (strlen($paymentLink) > 0) {
+            $nowDate = \Bitrix\Main\Type\DateTime::createFromPhp(new \DateTime());
+            $arNewStatusFields = $status->toArray();
+            $arNewStatusFields['PAY_ID'] = $order->getNumber();
+            $arNewStatusFields["DATE"] = $nowDate;
+            unset($arNewStatusFields["ID"]);
+            OrderStatus::create($arNewStatusFields);
             LocalRedirect($paymentLink);
-        }
-        else {
+        } else {
             $failUrl = $order->getConfig()->getPaymentResultUrl($order->getNumber(), false);
             LocalRedirect($failUrl);
         }
-    }
-    else if ($order->isDeclined()) {
+    } else if ($order->isDeclined()) {
         $failUrl = $order->getConfig()->getPaymentResultUrl($order->getNumber(), false);
         LocalRedirect($failUrl);
-    }
-    else if ($order->isNotFound()) {
+    } else if ($order->isNotFound()) {
         $arNewOrder = $order->create();
 
         if (isset($arNewOrder["errorCode"])) {

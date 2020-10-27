@@ -18,6 +18,7 @@ class OrderManager {
     const ORDER_STATUS_PAID = 2;
     const ORDER_STATUS_DECLINED = 6;
     const ORDER_ERROR_NOT_FOUND = 6;
+    const ORDER_AUTORIZE_PAY = 5;
 
     protected $config;
     protected $orderNumber;
@@ -84,6 +85,15 @@ class OrderManager {
 
     public function isNotFound() {
         return ($this->orderStatus["errorCode"] == static::ORDER_ERROR_NOT_FOUND);
+    }
+
+    public function isAutorizePay() {
+        return ($this->orderStatus["orderStatus"] == static::ORDER_AUTORIZE_PAY);
+    }
+
+    public function getAmount()
+    {
+        return $this->orderStatus["amount"]/100;
     }
 
     public function create() {
