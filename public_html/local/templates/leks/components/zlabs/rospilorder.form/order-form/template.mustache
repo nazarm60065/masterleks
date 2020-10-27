@@ -55,14 +55,21 @@
                     {{/orderStatusExists}}
                     {{#showOrderPrice}}
                         <div class="order-payment-info">
-                            <p class="order-payment-info__item"><b>Общая сумма заказа</b>: {{orderPrice}}</p>
-                            <p class="order-payment-info__item"><b>Оплачено по заказу</b>: {{paidSum}}</p>
+                            <p class="order-payment-info__item"><span class="order-payment-info__item_title"><b>Оплачено по заказу</b>:</span> <span class="order-payment-info__item_val">{{paidSum}}</span></p>
+                            <p class="order-payment-info__item"><span class="order-payment-info__item_title"><b>Общая сумма заказа</b>:</span> <span class="order-payment-info__item_val">{{orderPrice}}</span></p>
+                            <p class="order-payment-info__item"><span class="order-payment-info__item_title"><b>Осталось оплатить</b>:</span> <span class="order-payment-info__item_val">{{leftToPay}}</span></p>
                         </div>
                     {{/showOrderPrice}}
                     {{#showPaymentButton}}
+                        <div class="payment-sum">
+                            <input class="payment-sum__value"
+                                   type="text"
+                                   value=""
+                                   data-max-sum="{{sum}}"
+                                   placeholder="Введите сумму оплаты">
+                        </div>
                         <div class="sberbank-pay">
-                            <a href="/create-order.php?orderNumber={{order}}"
-                            class="sberbank-pay__link">Оплатить {{sum}} руб.</a>
+                            <a href="/create-order.php?orderNumber={{order}}" class="sberbank-pay__link sberbank-pay__link_disabled">Оплатить</a>
                         </div>
                     {{/showPaymentButton}}
                     {{^lines.isEmpty}}
