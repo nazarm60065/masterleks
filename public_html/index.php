@@ -86,28 +86,30 @@ $APPLICATION->SetTitle("Мастер Лекс");
 	)
 );?> <section>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list",
-	"section-main-with-prices",
-	Array(
-		"ADD_SECTIONS_CHAIN" => "Y",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"COMPONENT_TEMPLATE" => "section-main-with-prices",
-		"COUNT_ELEMENTS" => "N",
-		"HEADLINE" => "Каталог",
-		"HIDE_SECTION_NAME" => "N",
-		"IBLOCK_ID" => "7",
-		"IBLOCK_TYPE" => "leks_catalog",
-		"SECTION_CODE" => "",
-		"SECTION_FIELDS" => array(0=>"NAME",1=>"PICTURE",2=>"DETAIL_PICTURE",3=>"",),
-		"SECTION_ID" => "364",
-		"SECTION_URL" => "#SITE_DIR#/catalog/#SECTION_CODE_PATH#/",
-		"SECTION_USER_FIELDS" => array(0=>"UF_COST",1=>"",),
-		"SHOW_PARENT_NAME" => "Y",
-		"TOP_DEPTH" => "1"
-	)
-);?> </section> <section>
+    "zaiv:instagramwidget",
+    "zaiv_inst_custom",
+    array(
+        "COMPONENT_TEMPLATE" => "zaiv_inst_custom",
+        "MEDIA_COUNT" => "9",
+        "MEDIA_ROW_COUNT" => "3",
+        "ACCOUNT_AVATAR_SIZE" => "MEDIUM",
+        "ACCOUNT_AVATAR_SIZE_MOBILE" => "MEDIUM",
+        "SHOW_ACCOUNT_INFO" => "N",
+        "SHOW_ACCOUNT_INFO_TYPE" => "TYPE2",
+        "SHOW_ACCOUNT_INFO_TYPE_MOBILE" => "TYPE1",
+        "SHOW_ACCOUNT_DESCRIPTION" => "N",
+        "SHOW_INSTAGRAM_LOGO" => "N",
+        "INSTAGRAM_LOGO_TYPE" => "BIG",
+        "NAME_TYPE" => "FULLNAME",
+        "NOINDEX_WIDGET" => "Y",
+        "NOINDEX_LINKS" => "Y",
+        "DEL_SPEC_SYMBOLS_IN_DESCRIPTION" => "N",
+        "CACHE_TYPE" => "A",
+        "CACHE_TIME" => "86400"
+    ),
+    false
+);?>
+</section> <section>
 <div class="container">
 	<div class="section__sub-title section__sub-title_right">
 		 Наши проекты
