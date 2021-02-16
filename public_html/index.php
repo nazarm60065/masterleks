@@ -85,6 +85,7 @@ $APPLICATION->SetTitle("Мастер Лекс");
 		"TOP_DEPTH" => "1"
 	)
 );?> <section>
+    <div class="container">
 <?$APPLICATION->IncludeComponent(
     "zaiv:instagramwidget",
     "zaiv_inst_custom",
@@ -109,6 +110,7 @@ $APPLICATION->SetTitle("Мастер Лекс");
     ),
     false
 );?>
+    </div>
 </section> <section>
 <div class="container">
 	<div class="section__sub-title section__sub-title_right">
