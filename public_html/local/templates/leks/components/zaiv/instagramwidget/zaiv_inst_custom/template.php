@@ -3,7 +3,9 @@
 <div class="zaiv-instagram-widget-container">
 
 	<?if(!count($arResult[ERRORS])){?>
-
+        <div class="section__sub-title section__sub-title_mobile-center">
+            Наш Instagram
+        </div>
 	<div class="zaiv-instagram-widget-media w<?=($arParams[MEDIA_ROW_COUNT])?$arParams[MEDIA_ROW_COUNT]:"8"?> <?=($arParams[MEDIA_ROW_COUNT]>5)?"wide":""?>">
 			<?foreach($arResult[ITEMS] as $arItem){?>
 				<a href="<?=$arItem[LINK]?>" <?=($arParams[NOINDEX_LINKS]=="Y")?'rel="nofollow"':''?> target="_blank" style="background-image:url(<?=$arItem[IMAGE]?>)"></a>
