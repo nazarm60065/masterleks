@@ -149,19 +149,31 @@ $APPLICATION->SetTitle("Каталог");
 		"USE_COMPARE" => "N",
 		"USE_ELEMENT_COUNTER" => "N",
 		"USE_ENHANCED_ECOMMERCE" => "N",
-		"USE_FILTER" => "N",
+		"USE_FILTER" => "Y",
 		"USE_MAIN_ELEMENT_SECTION" => "N",
 		"USE_PRICE_COUNT" => "N",
 		"USE_PRODUCT_QUANTITY" => "N",
 		"USE_STORE" => "N",
 		"COMPONENT_TEMPLATE" => "catalog",
+		"FILTER_NAME" => "arrFilter",
+		"FILTER_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"FILTER_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"FILTER_PRICE_CODE" => array(
+		),
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
 			"section" => "#SECTION_CODE_PATH#/",
 			"element" => "#SECTION_CODE_PATH#/#ELEMENT_CODE#/",
 			"compare" => "",
 			"smart_filter" => "",
-		)
+		),
+        'HIDE_SECTION_DESCRIPTION'=> 'Y'
 	),
 	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -542,6 +542,41 @@ footer{
     font-size: 0.8rem;
     line-height: 1.5rem;
 }
+
+.section-description__container {
+    height: 155px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-description {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-description > p:first-child{
+    margin-top: 0;
+}
+
+.section-description > p:last-child{
+    margin-bottom: 0;
+}
+
+.section-description_show {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: #6e6e6e;
+    text-decoration: underline;
+    margin: 0 auto;
+}
+
+.section-description_show:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 767px) {
     .track_box,
     .lead_box{
