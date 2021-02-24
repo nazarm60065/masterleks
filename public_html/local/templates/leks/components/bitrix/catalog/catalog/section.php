@@ -19,6 +19,21 @@ $APPLICATION->SetAdditionalCSS('/local/frontend/local/catalog-kitchen/catalog-ki
 $APPLICATION->AddHeadScript('/local/frontend/local/catalog-kitchen/catalog-kitchen.js');
 
 $this->setFrameMode(true);
+global $arrFilter;
+
+//if(stristr( $arResult["VARIABLES"]['SECTION_CODE_PATH'], 'catalog')):
+
+    $res = CIBlockSection::GetByID($arResult['VARIABLES']["SECTION_ID"]);
+    if($arSect = $res->GetNext()) {
+        if(!empty($arSect['DESCRIPTION'])) {
+            echo "<div class='section-description__container'>";
+            echo "<div class='section-description'>" . $arSect['DESCRIPTION'] . "</div>";
+            echo "</div>";
+            echo "<button class='section-description_show'>Развернуть</button>";
+        }
+    }
+    echo "</div>";
+   // endif;
 
 $APPLICATION->IncludeComponent(
     "bitrix:catalog.section.list",
@@ -171,7 +186,8 @@ $intSectionID = $APPLICATION->IncludeComponent(
         'USE_COMPARE_LIST' => 'Y',
         'BACKGROUND_IMAGE' => (isset($arParams['SECTION_BACKGROUND_IMAGE']) ? $arParams['SECTION_BACKGROUND_IMAGE'] : ''),
         'COMPATIBLE_MODE' => (isset($arParams['COMPATIBLE_MODE']) ? $arParams['COMPATIBLE_MODE'] : ''),
-        'DISABLE_INIT_JS_IN_COMPONENT' => (isset($arParams['DISABLE_INIT_JS_IN_COMPONENT']) ? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : '')
+        'DISABLE_INIT_JS_IN_COMPONENT' => (isset($arParams['DISABLE_INIT_JS_IN_COMPONENT']) ? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : ''),
+        'HIDE_SECTION_DESCRIPTION' => $arParams['HIDE_SECTION_DESCRIPTION']
     ),
     $component
 );
