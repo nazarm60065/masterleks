@@ -21,19 +21,15 @@ $APPLICATION->AddHeadScript('/local/frontend/local/catalog-kitchen/catalog-kitch
 $this->setFrameMode(true);
 global $arrFilter;
 
-//if(stristr( $arResult["VARIABLES"]['SECTION_CODE_PATH'], 'catalog')):
-
     $res = CIBlockSection::GetByID($arResult['VARIABLES']["SECTION_ID"]);
     if($arSect = $res->GetNext()) {
         if(!empty($arSect['DESCRIPTION'])) {
-            echo "<div class='section-description__container'>";
-            echo "<div class='section-description'>" . $arSect['DESCRIPTION'] . "</div>";
-            echo "</div>";
-            echo "<button class='section-description_show'>Развернуть</button>";
+            echo "<div class='section-description__container'>
+            <div class='section-description'>" . $arSect['DESCRIPTION'] . "</div>
+            </div>
+            <button class='section-description_show'>Развернуть</button>";
         }
     }
-    echo "</div>";
-   // endif;
 
 $APPLICATION->IncludeComponent(
     "bitrix:catalog.section.list",
