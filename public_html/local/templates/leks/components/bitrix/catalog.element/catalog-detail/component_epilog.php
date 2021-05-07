@@ -18,7 +18,7 @@ $APPLICATION->IncludeComponent(
 		"email_to" => array(
 			0 => "dimaline@mail.ru",
 			1 => "t.k.rp@mail.ru",
-			2 => "tanya.rychkova.1995@mail.ru",
+			2 => "rospil.mebel28@mail.ru",
 			3 => "",
 		),
 		"event_message_id" => array(
