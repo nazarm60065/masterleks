@@ -18,8 +18,8 @@ $APPLICATION->IncludeComponent(
 		"email_to" => array(
 			0 => "dimaline@mail.ru",
 			1 => "t.k.rp@mail.ru",
-			2 => "tanya.rychkova.1995@mail.ru",
-			3 => "",
+			2 => "rospil.mebel28@mail.ru",
+			3 => "info@garagemebel.ru",
 		),
 		"event_message_id" => array(
 			0 => "10",
@@ -75,7 +75,9 @@ $APPLICATION->IncludeComponent(
 		"field_4_required" => "N",
 		"field_4_placeholder" => "Прикрепить файл",
 		"field_4_note" => "Прикрепить файл",
-		"field_4_multiple" => "N"
+		"field_4_multiple" => "N",
+		"COMPOSITE_FRAME_MODE" => "A",
+		"COMPOSITE_FRAME_TYPE" => "AUTO"
 	),
 	false
 );
