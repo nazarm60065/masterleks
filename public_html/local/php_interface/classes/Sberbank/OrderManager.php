@@ -63,6 +63,7 @@ class OrderManager {
         }
 
         $httpCheckClient = new HttpClient();
+        $httpCheckClient->disableSslVerification();
         $responseCheckJSON = $httpCheckClient->post($this->config->getCheckOrderUrl(), $checkOrderData);
 
         $this->orderStatus = json_decode($responseCheckJSON, true);
@@ -111,6 +112,7 @@ class OrderManager {
         ];
 
         $httpRegisterClient = new HttpClient();
+        $httpRegisterClient->disableSslVerification();
         $responseRegisterJSON = $httpRegisterClient->post($this->config->getRegisterOrderUrl(), $registerOrderData);
         return json_decode($responseRegisterJSON, true);
     }

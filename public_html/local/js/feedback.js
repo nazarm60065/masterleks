@@ -45,7 +45,7 @@
             data.submitHtml = $(data.submitButton).html();
 
             if ($(data.control_valid_phone).length > 0) {
-                $(data.control_valid_phone).inputmask('+7 (999) 999-99-99');
+                $(data.control_valid_phone).inputmask('99999999999');
             }
 
             return _this
