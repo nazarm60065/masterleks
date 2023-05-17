@@ -55,6 +55,21 @@ if ($status->count() > 0) {
         LocalRedirect($successUrl);
     } else if ($order->isNotPaid() || $order->isAutorizePay()) {
         $paymentLink = OrderLink::getPaymentLink($order->getNumber());
+
+        if (!$paymentLink && !empty($orderStatus['attributes'])) {
+            // заказ создан в сбере, но нет ссылки на сайте
+
+            foreach ($orderStatus['attributes'] as $attribute) {
+                if ($attribute['name'] === 'mdOrder') {
+                    $paymentLink = 'https://securecardpayment.ru/payment/merchants/sbersafe_sberid/payment_ru.html?' . $attribute['name'] . '=' . $attribute['value'];
+
+                    OrderLink::create(['UF_ORDER_NUMBER' => +$orderNumber, 'UF_PAYMENT_LINK' => $paymentLink]);
+
+                    break;
+                }
+            }
+        }
+
         if (strlen($paymentLink) > 0) {
             $nowDate = \Bitrix\Main\Type\DateTime::createFromPhp(new \DateTime());
             $arNewStatusFields = $status->toArray();
@@ -77,7 +92,7 @@ if ($status->count() > 0) {
             $failUrl = $order->getConfig()->getPaymentResultUrl($order->getNumber(), false);
             LocalRedirect($failUrl);
         } else {
-            OrderLink::create(['UF_ORDER_NUMBER' => $order->getNumber(), 'UF_PAYMENT_LINK' => $arNewOrder["formUrl"]]);
+            OrderLink::create(['UF_ORDER_NUMBER' => +$order->getNumber(), 'UF_PAYMENT_LINK' => $arNewOrder["formUrl"]]);
             LocalRedirect($arNewOrder["formUrl"]);
         }
     }

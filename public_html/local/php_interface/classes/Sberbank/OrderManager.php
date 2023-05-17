@@ -67,7 +67,7 @@ class OrderManager {
         $responseCheckJSON = $httpCheckClient->post($this->config->getCheckOrderUrl(), $checkOrderData);
 
         $this->orderStatus = json_decode($responseCheckJSON, true);
-        return $this;
+        return $this->orderStatus;
     }
 
     public function isPaid() {
