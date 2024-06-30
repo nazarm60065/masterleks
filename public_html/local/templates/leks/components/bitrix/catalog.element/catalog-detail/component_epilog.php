@@ -16,10 +16,10 @@ $APPLICATION->IncludeComponent(
 	"catalog_modal_form", 
 	array(
 		"email_to" => array(
-			0 => "dimaline@mail.ru",
-			1 => "t.k.rp@mail.ru",
-			2 => "rospil.mebel28@mail.ru",
-			3 => "info@garagemebel.ru",
+			0 => "adm.rospil@mail.ru",
+			1 => "",
+			2 => "",
+			3 => "",
 			4 => "",
 		),
 		"event_message_id" => array(
