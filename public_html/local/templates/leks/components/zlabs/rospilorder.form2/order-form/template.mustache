@@ -1,0 +1,95 @@
+<div class="full_section">
+    <div class="container_section">
+        <div class="track_box">
+            <span class="h2 font_bold">Введите номер заказа</span>
+            <form class="order-form" action="" method="get">
+                <div class="order-form__control-container">
+                    <input type="text" name="order" placeholder="" value="{{order}}">
+                    {{#order}}
+                        <a class="order-form__link" href="{{defaultHref}}" title="">Сбросить</a>
+                    {{/order}}
+                </div>
+                <button class="button">Отследить</button>
+            </form>
+            {{#errorMessage}}
+                <div class="order-form-error">{{{.}}}</div>
+            {{/errorMessage}}
+        </div>
+        {{#issetResult}}
+            <div class="lead_box">
+                <div class="lead_info">
+                    <div class="title">{{{customer}}}</div>
+                    <div class="lead_number">Ваш заказ №  {{order}}</div>
+                    {{#queuePosition}}
+                        <div class="order">Перед вами {{queuePosition}} {{queuePositionWordForm}}</div>
+                    {{/queuePosition}}
+                    <div class="dates">
+                        {{#outputDate}}
+                            <div class="date_installation">
+                                <div>ориентировочная дата отгрузки</div>
+                                <div class="date">{{outputDate}}</div>
+                            </div>
+                        {{/outputDate}}
+                        {{#installationDate}}
+                            {{#installationDateBeenChanged}}
+                                <div class="date_installation">
+                                    <div>ориентировочная дата монтажа</div>
+                                    <div class="date">{{installationDate}}</div>
+                                </div>
+                            {{/installationDateBeenChanged}}
+                            {{^installationDateBeenChanged}}
+                                <div class="date_installation">
+                                    <div>ориентировочная дата монтажа</div>
+                                    <div class="date">{{firstInstallationDate}}</div>
+                                </div>
+                            {{/installationDateBeenChanged}}
+                        {{/installationDate}}
+                    </div>
+                    {{#orderStatusExists}}
+                        <div class="order-status {{orderStatusClass}}">
+                            {{orderStatusText}}
+                            {{^paymentSuccess}}
+                                <a href="tel:{{companyTelephoneNumber}}">+7 914 538  20 87</a>
+                            {{/paymentSuccess}}
+                        </div>
+                    {{/orderStatusExists}}
+                    {{#showOrderPrice}}
+                        <div class="order-payment-info">
+                            <p class="order-payment-info__item"><span class="order-payment-info__item_title"><b>Оплачено по заказу</b>:</span> <span class="order-payment-info__item_val">{{paidSum}}</span></p>
+                            <p class="order-payment-info__item"><span class="order-payment-info__item_title"><b>Общая сумма заказа</b>:</span> <span class="order-payment-info__item_val">{{orderPrice}}</span></p>
+                            <p class="order-payment-info__item"><span class="order-payment-info__item_title"><b>Осталось оплатить</b>:</span> <span class="order-payment-info__item_val">{{leftToPay}}</span></p>
+                        </div>
+                    {{/showOrderPrice}}
+                    {{#showPaymentButton}}
+                        <div class="payment-sum">
+                            <input class="payment-sum__value"
+                                   type="text"
+                                   value=""
+                                   data-max-sum="{{sum}}"
+                                   placeholder="Введите сумму оплаты">
+                        </div>
+                        <div class="sberbank-pay">
+                            <a href="/create-order.php?orderNumber={{order}}" class="sberbank-pay__link sberbank-pay__link_disabled">Оплатить</a>
+                        </div>
+                    {{/showPaymentButton}}
+                    {{^lines.isEmpty}}
+                        <div class="note">
+                            <div class="h2 h2_bottom_margin font_bold note__title">Заметки:</div>
+                            {{#lines}}
+                                <div class="note-status{{^active}} note-status_uncompleted{{/active}}">
+                                    <div class="note-status-content">
+                                        <div class="note-status__date">{{date}}</div>
+                                        <div class="note-status__value">{{{status}}}</div>
+                                        {{#note}}
+                                            <div class="note-status__note">{{{.}}}</div>
+                                        {{/note}}
+                                    </div>
+                                </div>
+                            {{/lines}}
+                        </div>
+                    {{/lines.isEmpty}}
+                </div>
+            </div>
+        {{/issetResult}}
+    </div>
+</div>

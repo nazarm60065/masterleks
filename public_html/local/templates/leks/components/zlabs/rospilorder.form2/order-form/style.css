@@ -1,0 +1,210 @@
+.order-form-error {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #EC5858;
+    margin-top: 15px;
+}
+
+.order-form__control-container {
+    position: relative;
+}
+
+.order-form__link {
+    top: 35%;
+    position: absolute;
+    right: 15px;
+    transform: translateY(-50%);
+    border-bottom: 1px dashed;
+    line-height: 1.1;
+    font-size: 12px;
+}
+
+.lead_box .note p span:first-child {
+    margin-right: 15px;
+}
+
+.payment-sum {
+    text-align: center;
+}
+
+.payment-sum__value {
+    padding: 7px 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.sberbank-pay {
+    text-align: center;
+}
+
+.sberbank-pay__link {
+    outline: none;
+    background-color: #ffed00;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.78rem;
+    cursor: pointer;
+    padding: 10px 30px;
+    display: inline-block;
+    border: none;
+}
+
+.sberbank-pay__link:hover {
+    color: #000;
+}
+
+.sberbank-pay__link.sberbank-pay__link_disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+}
+
+.order-status {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: solid 1px #000;
+}
+
+.order-status.success {
+    color: #73ca01;
+    border-color: #73ca01;
+}
+
+.order-status.error {
+    color: #ff0d07;
+    border-color: #ff0d07;
+}
+
+.order-payment-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-payment-info__item {
+    font-size: 15px;
+    margin-top: 0;
+}
+.order-payment-info__item_title{
+    font-size: 13px;
+}
+.order-payment-info__item_val {
+    font-size: 16px;
+}
+.note{
+    margin-top: 40px;
+    counter-reset: statusList;
+}
+
+.note__title {
+    text-align: left;
+}
+
+.note-status {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    counter-increment: statusList;
+    margin-bottom: 40px;
+}
+
+.note-status_uncompleted {
+    color: rgb(222, 222, 222);
+}
+
+.note-status:after {
+    content: '';
+    position: absolute;
+    background-color: #e8e8e8;
+    width: 2px;
+    top: 0;
+    left: 25px;
+    height: calc(100% + 41px);
+    z-index: -1;
+}
+
+.note-status:last-child {
+    margin-bottom: 0;
+}
+
+.note-status:last-child:after {
+    display: none;
+}
+
+.note-status:before {
+    content: counter(statusList);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #222222;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-status-content {
+    width: 100%;
+    min-width: 0;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+    text-align: left;
+}
+
+.note-status__note {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+@media (min-width: 768px) {
+    .order-payment-info {
+        flex-direction: row;
+    }
+
+    .order-payment-info__item {
+        font-size: 16px;
+    }
+    .order-payment-info__item_title,
+    .order-payment-info__item_val{
+        display: inline-block;
+        font-size: 16px;
+    }
+    .order-form__link {
+        top: 50%;
+    }
+
+    .note-status-content {
+        font-size: 20px;
+    }
+
+    .note-status__note {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+}
+
+@media (min-width: 1280px) {
+    .note-status-content {
+        font-size: 22px;
+    }
+
+    .note-status__note {
+        font-size: 15px;
+    }
+}
