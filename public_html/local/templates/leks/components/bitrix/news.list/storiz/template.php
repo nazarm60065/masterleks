@@ -106,6 +106,13 @@ $this->setFrameMode(true);
                                                                 <? endforeach; ?>
                                                             </div>
                                                             <div class="slider__progress storiz-modal-gallery-progress"></div>
+                                                            <div class="storiz-modal-controls">
+                                                                <button class="storiz-modal__control"
+                                                                        data-fancybox-close
+                                                                        type="button">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 18-6-6m0 0L6 6m6 6 6-6m-6 6-6 6"/></svg>
+                                                                </button>
+                                                            </div>
                                                             <button class="storiz-modal-gallery__arrow storiz-modal-gallery__arrow_next"
                                                                     type="button">
                                                                 <svg width="36" height="36" viewBox="0 0 36 36"
@@ -124,16 +131,16 @@ $this->setFrameMode(true);
                                                             <div class="storiz-modal-video-progress">
                                                                 <div class="storiz-modal-video-progress__bar"></div>
                                                             </div>
-                                                            <div class="storiz-modal-video-controls">
+                                                            <div class="storiz-modal-controls">
                                                                 <? if (false) : ?>
-                                                                    <button class="storiz-modal-video__control storiz-modal-video__pause"
+                                                                    <button class="storiz-modal__control storiz-modal-video__pause"
                                                                             type="button">
-                                                                <span class="storiz-modal-video__control-icon storiz-modal-video__control-icon_pause">
+                                                                <span class="storiz-modal__control-icon storiz-modal__control-icon_pause">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                          height="16" viewBox="0 0 32 32"><path
                                                                                 d="M5.92 24.096q0 .832.576 1.408t1.44.608h4.032q.832 0 1.44-.608t.576-1.408V7.936q0-.832-.576-1.44t-1.44-.576H7.936q-.832 0-1.44.576t-.576 1.44v16.16zm12.096 0q0 .832.608 1.408t1.408.608h4.032q.832 0 1.44-.608t.576-1.408V7.936q0-.832-.576-1.44t-1.44-.576h-4.032q-.832 0-1.408.576t-.608 1.44v16.16z"/></svg>
                                                                 </span>
-                                                                        <span class="storiz-modal-video__control-icon storiz-modal-video__control-icon_play">
+                                                                        <span class="storiz-modal__control-icon storiz-modal__control-icon_play">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                          height="16" fill="none" viewBox="0 0 24 24"><path
                                                                                 fill="#1F1F1F"
@@ -141,20 +148,25 @@ $this->setFrameMode(true);
                                                                 </span>
                                                                     </button>
                                                                 <? endif; ?>
-                                                                <button class="storiz-modal-video__control storiz-modal-video__muted"
+                                                                <button class="storiz-modal__control storiz-modal-video__muted"
                                                                         type="button">
-                                                            <span class="storiz-modal-video__control-icon storiz-modal-video__control-icon_muted">
+                                                            <span class="storiz-modal__control-icon storiz-modal__control-icon_muted">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                      height="16" viewBox="0 -3 30 30"><path fill="#000"
                                                                                                             fill-rule="evenodd"
                                                                                                             d="m25.444 12 4.173-4.173c.45-.45.492-1.139.094-1.538-.399-.398-1.088-.356-1.538.094L24 10.556l-4.173-4.173c-.45-.45-1.139-.492-1.538-.094-.398.399-.356 1.088.094 1.538L22.556 12l-4.173 4.173c-.45.45-.492 1.139-.094 1.538.399.398 1.088.356 1.538-.094L24 13.444l4.173 4.173c.45.45 1.139.492 1.538.094.398-.399.356-1.088-.094-1.538L25.444 12ZM14 0 7 4.667v14.666L14 24a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM0 8v8a2 2 0 0 0 2 2h3V6H2a2 2 0 0 0-2 2Z"/></svg>
                                                             </span>
-                                                                    <span class="storiz-modal-video__control-icon storiz-modal-video__control-icon_full">
+                                                                    <span class="storiz-modal__control-icon storiz-modal__control-icon_full">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                      height="16" viewBox="0 -1.5 31 31"><path
                                                                             fill="#000" fill-rule="evenodd"
                                                                             d="M19 .015v2.053C24.872 3.199 29 7.988 29 14c0 5.978-4 10.609-10 11.932v2.054c6.776-.992 12-6.843 12-13.986C31 6.857 25.776 1.006 19 .015ZM14 2 7 6.667v14.666L14 26a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm11 12c0-3.523-2.612-6.41-6-6.899v2a5 5 0 0 1 0 9.798v2c3.388-.489 6-3.376 6-6.899ZM0 10v8a2 2 0 0 0 2 2h3V8H2a2 2 0 0 0-2 2Z"/></svg>
                                                             </span>
+                                                                </button>
+                                                                <button class="storiz-modal__control"
+                                                                        data-fancybox-close
+                                                                        type="button">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 18-6-6m0 0L6 6m6 6 6-6m-6 6-6 6"/></svg>
                                                                 </button>
                                                             </div>
                                                         </div>
